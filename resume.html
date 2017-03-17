@@ -20,27 +20,49 @@
 <style>
 /* =========FONT AND GENERAL SETTINGS===========	 */
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-body {font-family: 'Raleway', sans-serif; font-weight: 100;}
+body {font-family: 'Raleway', sans-serif; font-weight: 100; margin: 2.5vw; color: #605f5f;}
+h2 {color: #8d2a30; font-weight: bold; font-size: 1.3em; margin-bottom: 0.7em; margin-top: 1.2em;}
+h3 {color: #8d2a30; font-size: 1.15em;}
+p, li {line-height: 1.7em;}
 
+/* unvisited link */
+a:link {
+    color: #3669df;
+}
 
+/* visited link */
+a:visited {
+    color: #3669df;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+    color: #a13d8a;
+}
 
 
 
 /* =========HEADER=========== */
 
-header {width: 100vw;}
-#name {font-size: 3em;}
+header {width: 100vw; margin-bottom: 3em;}
+#name {font-size: 3em; color: #8d2a30;}
 #title {font-size: 2em;}
 
 /* =========ASIDE=========== */
 
 
-.formatResumeAside {float: left; width: 30vw; background-color: gray;}
+.formatResumeAside {float: left; width: 25vw;}
+#contact {}
 
 
 /* =========MAIN SECTION=========== */
 
-.formatResumeMain {float: left; width: 70vw;}
+.formatResumeMain {float: right; width: 50vw; margin-right: 12vw;}
 
 ul {
   list-style-type: none;
@@ -62,61 +84,62 @@ ul {
 <section class="formatResumeAside formatProAside">
 	
 
-	
-<h2>CONTACT INFO</h2>
-<p>Eduardo Costa</p>
-<p>eduardo@torontobabel.com</p>
-<p>647-967-3212</p>
-<p>PH 8 – 80 St Clair Ave E</p>
-<p>Toronto ON</p>
-<p>M4T 1N6</p>
+<div id="contact">	
+<h2>CONTACT ME</h2>
+<ul>
+<li>Eduardo Costa</li>
+<li>eduardo@torontobabel.com</li>
+<li>647-967-3212</li>
+<li><a href="http://www.eduardo.work">Professional website: www.eduardo.work</a></li>
+<li><a href="https://www.linkedin.com/in/eduardo-costa-2167b713">LinkedIn profile</a></li>
+<li><a href="photography.html">Photography</a></li>
+<li><a href="Eduardo%20Costa%20-%20resume.pdf" download>Download resume - Color</a></li>
+<li><a href="Eduardo%20Costa%20-%20resume.pdf" download>Download resume - Printer friendly</a></li>
+</ul>
+</div>
+</br></br>
+
+
+
+<h2>ADVANCED SKILLS</h2>
+<ul>
+<li>UI/UX</li>
+<li>Project management</li>
+<li>HTML 5</li>
+<li>CSS 3</li>
+<li>jQuery</li>
+<li>Bootstrap</li>
+<li>Lightroom</li>
+<li>Photography</li>
+<li>Sketch 3</li>
+<li>GitHub</li>
+<li>Unix for OSX</li>
+</ul>
 </br>
 
-<h2>ADVANCED</h2>
-<p>Project management</p>
-<p>HTML 5</p>
-<p>CSS 3</p>
-<p>Bootstrap</p>
-<p>UI/UX</p>
-<p>Illustrator</p>
-<p>Lightroom</p>
-<p>Dreamweaver</p>
-<p>Photography</p>
-<p>Sketch 3</p>
-<p>GitHub</p>
-<p>Unix for OSX</p>
-<p>Jquery</p>
-</br>
 
-
-<h2>INTERMEDIATE</h2>
-<p>Photoshop</p>
-<p>Javascript</p>
-
-</br>
-
-<h2>LEARNING</h2>
-<p>Angular 2</p>
-<p>LESS/SASS</p>
-<p>SQL</p>
-<p>PHP</p>
-<p>Ruby</p>
-<p>Ruby on Rails</p>
+<h2>INTERMEDIATE SKILLS </br>AND LEARNING</h2>
+<ul>
+<li>Photoshop</li>
+<li>Illustrator</li>
+<li>Javascript</li>
+<li>Angular 2</li>
+<li>LESS/SASS</li>
+<li>jQuery UI</li>
+<li>SQL</li>
+<li>PHP</li>
+<li>Ruby</li>
+<li>Ruby on Rails</li>
+</ul>
 </br>
 
 <h2>LANGUAGES</h2>
+<ul>
 <p>English</p>
 <p>Portuguese</p>
 <p>Learning French</p>
+</ul>
 </br>
-
-<h2>PERSONAL SKILLS</h2>
-<p>Creative thinker</p>
-<p>Imaginative</p>
-<p>Deadline led</p>
-<p>Responsible</p>
-<p>Outgoing</p>
-
 
 
 	
@@ -127,33 +150,32 @@ ul {
 <section class="formatResumeMain formatProMain">
 	
 <h2>PERSONAL SUMMARY</h2>
-<p>I am a well-rounded professional specialized in UX/UI design and with a lot of experience in front end development and project management.</p>
-<p>Along my career, I had a chance to work and to participate in projects for diverse business, from IBM, small companies and Ontario government.</p> 
-<p>And finally, I am also a marathon runner, meetup organizer and avid reader and photographer.</p>
-<p>Here you can see a sample of my work: <a href="http://www.eduardo.work">www.eduardo.work</a></p>
+<p>I am a well-rounded professional specialized in UX/UI design. I have also a lot of experience in front-end development and project management.</p>
+<p>Along my career, I had a chance to manage projects for diverse business: from IBM to small companies and even Ontario government.</p> 
+<p>I am also a meetup organizer, avid reader and photographer.</p>
 </br>
 
 <h2>CAREER HISTORY IN CANADA</h2>
-<p>tudoaqui.ca</p>
+<h3>tudoaqui.ca</h3>
 <p>UI/UX Front End Designer / 2011 – Current</p>
 <ul>
 <li>Developed the entire responsive online newspaper using UI/UX techniques and methodologies</li>
-<li>Coded the entire website over 100 pages using advanced HTML5, CSS3, LESS and DOM manipulation using JavaScript and jQuery</li>
+<li>Coded the entire website over 100 pages using advanced HTML5, CSS3, LESS, JavaScript and jQuery</li>
 <li>Worked with clients to meet their requirements and used Photoshop for wireframes and mock-ups</li>
 <li>Used 5S approach: Strategy, Scope, Structure, Skeleton and Surface</li>
-<li>Prepared styled emails for the campaigns (classifieds outreach and events)</li>
+<li>Prepared styled emails for the campaigns (classifieds and events)</li>
 </ul>
 </br>
 
-<p>Run Unlimited</p>
+<h3>Run Unlimited</h3>
 <p>Web developer  / 2011 - 2014</p>
 <ul>
 <li>Created a responsive e-commerce website using HTML5 and CSS3, logo, Flash animations</li>
-<li>Set up hosting, domain registration and PayPal accounts</li>
+<li>Set up hosting, domain registration and payment plugins</li>
 </ul>
 </br>
 
-<p>Ontario Ministry of Research and Innovation</p>
+<h3>Ontario Ministry of Research and Innovation</h3>
 <p>Project Manager / 2010 – 2011</p>
 <ul>
 <li>Led the project to build a database with innovation metrics currently tracked by international organizations</li>
@@ -162,29 +184,34 @@ ul {
 </ul>
 </br>
 
-<h2>LATEST WEB DESIGN CERTIFICATIONS</h2>
-<p>User Experience Certificate - George Brown College</p>
-<p>Currently enrolled</p>
+<h2>UI/UX and WEB DEVELOPMENT CERTIFICATIONS</h2>
+<h3>User Experience Certificate - George Brown College</h3>
 <p>Specialization in UX/UI. This certificate provides a strong foundation in user experience (UX) design. Focused on advanced concepts of UX research and strategy, intuitive structure and best practices</p>
 </br>
 
-<p>Web Design Certificate - OCAD, Toronto</p>
-<p>Currently enrolled</p>
+<h3>Front-end Development Certification - FreeCodeCamp - Online</h3>
+<p>Online course covering the main technologies of front-end development</p>
+</br>
+
+<h3>Web Design Certificate - OCAD, Toronto</h3>
 <p>Deeper understanding of web design, development, SEO and statistics in one of the best art schools of Canada</p>
 </br>
 
-<p>Responsive Website Development and Design - University of London, UK</p>
-<p>Currently enrolled</p>
-<p>Six-month certification program. Learning about UX/UI, responsive websites, HTML, CSS, JavaScript, Meteor.js, JQuery and databases</p>
+<h3>Responsive Website Development and Design - University of London, UK</h3>
+<p>Six-month certification program. Learning about UX/UI, responsive websites, HTML, CSS, JavaScript, jQuery and databases</p>
+</br>
+
+<h3>Lynda.com</h3>
+<p>Over 60 online courses covering several techniques in UI/UX, front end and back end development</p>
 </br>
 
 <h2>ACADEMIC EDUCATION</h2>
-<p>Universidade Federal de Minas Gerais, Brazil</p>
+<h3>Universidade Federal de Minas Gerais, Brazil</h3>
 <p>Bachelor of Science in Mechanical Engineering  - 1999</p>
 <p>UFMG is considered one of the best universities in Brazil</p>
 </br>
 
-<p>UNA Management Sciences Faculty, Brazil</p>
+<h3>UNA Management Sciences Faculty, Brazil</h3>
 <p>Graduate studies of Business Management  - 1995</p>
 <p>1st. place in admission exams, among over 2,000 candidates</p>
 </br>	
@@ -192,38 +219,8 @@ ul {
 </section>
 
 
-
-
-
-
-
-<!--
-<script>
-var para = document.createElement("p");
-var node = document.createTextNode("Eduardo Costa");
-para.appendChild(node);
-var element = document.getElementById("div1");
-element.appendChild(para);
-
-var prof = document.createElement("p");
-var node = document.createTextNode("UX Specialist");
-prof.appendChild(node);
-var element = document.getElementById("div2");
-element.appendChild(prof);
-
-
-
-
-</script>
--->
-
-
-
-
 </br>
 
-<a href="Eduardo%20Costa%20-%20Web%20designer.pdf" download>Download my resume</a>
-<a href="Eduardo%20Costa%20-%20Web%20designer.pdf" download>Download my resume - Printer friendly version</a>
 
 </body>
 </html>
