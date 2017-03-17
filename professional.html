@@ -8,124 +8,278 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-<script src="main.js"></script>
+<script src="js/main.js"></script>
+
 
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/professional.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/professional.css"> -->
 
 <title>Eduardo Costa</title>
 </head>
 <body>
 <style>
-/* =========FONT===========	 */
+/* =========FONT AND GENERAL===========	 */
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-body {font-family: 'Raleway', sans-serif; font-weight: 100; background-color: black;}
+h3 {font-size: 1.4em; padding-left: 2.5em; }
+body {font-family: 'Raleway', sans-serif; font-weight: 100; color: white; background-color: black;}
 
-header {}
-#namePro {background-color: transparent; font-size: 4vw;}
-.nameTitlePro {background-color: transparent; font-size: 3vw; color: #ec0a0a;}
-aside {float: left; width: 33vw; height: 100vh; background-color: #ec6e33;}
+/* =========NAVIGATION===========	 */
+.nav {color:gray; background-color: white; position: fixed; height: 5vh; width: 100vw; z-index: 100;}
+.navLink {display: inline; margin-right: 15vw; font-size: 2vw; padding-left: 12vw; padding-bottom: 1vh;}
 
 
+/* =========HEADER===========	 */
+header {width: 100vw; height: 100vh;}
+#videoContainer {position: relative;}
+video { 
+    position: relative;
+    top: 10%;
+    left: 25%;
+    transform: scale(.5) translateX(-50%) translateY(-40%);
+    transition: 1s opacity;}
+#playvid {color: red; position: absolute; left: 35vw; top: 40vh; z-index: 3; margin:1em; font-size: 1.2em;}
+
+#titles {background-color: black; width: 100vw; margin: 0; padding-bottom: 2em; position: relative; top: -35vh;}
+#namePro {background-color: transparent; font-size: 4vw; text-align: center;}
+.nameTitlePro {background-color: transparent; font-size: 2vw; color: #ffffff; text-align: center;}
+
+/* =========ASIDES and SECTIONS===========	 */
+#aside1 {float: left; width: 33vw; height: 60vh; background-color: black; margin: 0;}
+.img-circle {border-radius: 50%;}
+#profile {border-radius: 20px; border-color: black; position: absolute; padding-top: 5vh; padding-left: 6vw; padding-right: 5vw;}
+#page-profile {float: left; height: 60vh; background-color: black;}
+
+#aside2 {float: left; width: 33vw; height: 100vh; background-color: #35eee8; margin: 0;}
+#page-education {float: left;  height: 100vh; background-color: yellow;}
+
+#aside3 {float: left; width: 33vw; height: 100vh; background-color: #3fbf3f; margin: 0;}
+#page-skills {float: left;  height: 100vh; background-color: #29939a;}
+
+#aside4 {float: left; width: 33vw; height: 100vh; background-color: #3e35ee; margin: 0;}
+#page-specialization {float: left;  height: 100vh; background-color: #47475c;}
+
+#aside5 {float: left; width: 33vw; height: 100vh; background-color: #eed935; margin: 0;}
+#page-experience {float: left; height: 100vh; background-color: #1b4e2f;}
+
+/* =========MAIN SECTION===========	 */
+
+#svgWeb {position: relative; top: 4vh; left: 3vw; z-index: 2;}
+/*
+.container {float: left; width: 67vw; clear: both; }
+.section-title {padding-left: 1.1em;}
+.section-subtitle {padding-left: 3em;}
+.largetext {padding-left: 3em; font-size: 1.2em;}
+*/
+
+
+.container {float: left; width: 67vw; padding-left: 1.1em; clear: both; }
+
+.largetext { font-size: 1.2em;}
+
+
+/* =========FOOTER===========	 */
+
+footer {margin-top: 3em; background-color: black; width: 100vw; margin: 0; z-index: 5; padding-bottom: 2em; float:left; text-align: center;}
 
 </style>
 
+
+
+
+<!-- ============NAV======================= -->
+
+<div class="nav">
+	<div class:"row">
+		<div class="navLink"><a href="http://www.eduardo.work/index.html">Home</a></div>
+		<div class="navLink"><a href="http://www.eduardo.work/index.html">Home</a></div> 
+		<div class="navLink"><a href="http://www.eduardo.work/index.html">Home</a></div>
+		
+	</div>
+</div>
+
+<!-- ============HEADER======================= -->
+
 <header>
+	<div id="videoContainer">
+		<video autoplay id="bgvid" loop muted>
+  		<source src="assets/videos/office.webm" type="video/webm">
+  		<source src="assets/videos/office.mp4" type="video/mp4">
+		</video>
+		<div id="playvid">Click on the video to pause/play</div>
+	</div>
+  
 	
 	<div id="titles">
-	<p id="namePro">Eduardo Costa</p>
-	<p class="nameTitlePro">UI/UX specialist and</p>
-	<p class="nameTitlePro">Front-end developer</p>
-	
-</div>
+		<p id="namePro">Eduardo Costa</p>
+		<p class="nameTitlePro">UI/UX specialist and</p>
+		<p class="nameTitlePro">Front-end developer</p>
+	</div>
 </header>
 
+<!-- ============PROFILE======================= -->
 
-<aside>
-	      <div class="col-md-3"> 
-        <div class="profile"><img alt="profile" src="assets/images/profile.jpg" /> 
-        </div> 
-      </div> 
-	
-</aside>
+<div id="blockProfile">
+	<div id="aside1">
+	 
+	    <div id="profile"><img  class="img-circle" alt="profile" src="assets/images/profile.jpg" /></div> 
+	    <div id="svgWeb">
+			<svg width="100%" viewBox="0 0 500 800"><text x="-575" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)"></text></svg>
+		</div>
+	</div>
 
-    <section id="page-profile" class="page-profile"> 
-  <div class="container"> <header class="section-header"> <h2 class="section-title">Personal Profile</h2> 
+   <section id="page-profile" class="page-profile"> 
+  <div class="container"><h2 class="section-title"><span>Personal Profile</span></h2> 
       <div class="spacer"></div> 
-      <p class="section-subtitle">PERSONAL SUMMARY</p> </header> 
+
     <div class="row"> 
 
       <div class="col-md-9 largetext"> 
         <p>I am a well-rounded professional with experience in developing, creating and delivering solutions for users and clients. </p> 
         <p>Along my career, I had a chance to work and to participate in projects for diverse business, from IBM to small companies and government. I have been creating logical and innovative solutions to complex problems.</p> 
         <p>I have a passion for web design and web development. I keep myself updated with the latest technologies. I have a keen interest in design and UX/UI.</p> 
-        <p>And finally, I am also a marathon runner, meetup organizer and avid reader and photographer.</p>
+        <p>And finally, I am also a marathon runner, meetup group organizer and avid reader and photographer.</p>
       </div> 
     </div> 
   </div> </section>
+  
+ 
     <!-- profile ends -->
+      
+<div id="aside2"> 
+	<div id="svgWeb">
+	<svg width="100%" viewBox="0 0 500 800"><text x="-425" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">UI/UX</text></svg>
+	</div>
+</div>
+    
+    
+    
     <!-- skills begins -->
     
     
-    
-     <section id="page-education" class="page-education"> 
-  <div class="container"> <header class="section-header"> <h2 class="section-title"><span>Education</span></h2> 
+    <section id="page-skills"> 
+  <div class="container"> <h2 class="section-title"><span>Specialization</span></h2> 
       <div class="spacer"></div> 
-      <p class="section-subtitle">Academic degrees </p> </header> 
+      <p class="section-subtitle">Current web design certifications</p>
     <div class="row"> 
-      <div class="col-md-6"> <article class="education"> <header> <h3>Universidade Federal de Minas Gerais, Brazil</h3> 
-            <p class="largetext">Bachelor of Science in Mechanical Engineering <strong>Graduated:</strong> 1999</p> </header> 
-          <p class="largetext">UFMG is considered one of the best universities in Brazil. Accredited by WES-Ontario</p> </article> 
-      </div> 
-      <div class="col-md-6"> <article class="education"> <header> <h3>UNA Management Sciences Faculty, Brazil</h3> 
-            <p class="largetext">Graduate studies of Business Management <strong>Graduated:</strong> 1995</p> </header> 
-          <p class="largetext">1st. place in admission exams, among over 2,000 candidates. Accredited by WES-Ontario</p> </article> 
-      </div> 
-    </div> 
-  </div> </section>    <!-- education ends -->
-    
-    <!-- Specialization begins -->
-    <section id="page-specialization" class="page-education"> 
-  <div class="container"> <header class="section-header"> <h2 class="section-title"><span>Specialization</span></h2> 
-      <div class="spacer"></div> 
-      <p class="section-subtitle">Current web design certifications</p> </header> 
-    <div class="row"> 
-      <div class="col-md-4"> <article class="education"> <header> <h3>User Experience Design Certificate - George Brown College</h3> 
-            <p class="largetext">Certification program. <strong>Graduated:</strong> enrolled</p> </header> 
+      <div class="col-md-4"> <article class="education">
+	       <h3>User Experience Design Certificate - George Brown College</h3> 
+            <p class="largetext">Certification program. </p> 
           <p class="largetext">Specialization in UX/UI. This certificate provides a strong foundation in user experience (UX) design. Focused on advanced concepts of UX research and strategy, intuitive structure and best practices.</p> </article> 
       </div> 
-      <div class="col-md-4"> <article class="education"> <header> <h3>Responsive Website Development and Design - University of London, UK</h3> 
-            <p class="largetext">Six months certification program. <strong>Graduated:</strong> enrolled</p> </header> 
+      <div class="col-md-4"> <article class="education">  <h3>Responsive Website Development and Design - University of London, UK</h3> 
+            <p class="largetext">Six months certification program. </p> 
           <p class="largetext">Learning about UX/UI, responsive websites, HTML, CSS, JavaScript, Meteor.js, JQuery and databases</p> </article> 
       </div> 
-      <div class="col-md-4"> <article class="education"> <header> <h3>Web Design Certificate - OCAD, Toronto</h3> 
-            <p class="largetext">Certification program. <strong>Graduated:</strong> enrolled</p> </header> 
+      <div class="col-md-4"> <article class="education"> <h3>Web Design Certificate - OCAD, Toronto</h3> 
+            <p class="largetext">Certification program.  </p> 
           <p class="largetext">Deeper understanding of web design, development, SEO and statistics in one of the best art schools of Canada.</p> </article> 
       </div> 
     </div> 
-  </div> </section>    <!-- Specialization ends -->
+  </div> </section> 
+    
+    
+    <!-- skills ends -->
+    
+
+  
+  
+<div id="aside3"> 
+	<div id="svgWeb">
+	<svg width="100%" viewBox="0 0 500 800"><text x="-375" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">web</text></svg>
+	</div>
+</div>
+    
+    <!-- Specialization begins -->
+    <section id="page-specialization"> 
+  <div class="container">  <h2 class="section-title"><span>Specialization</span></h2> 
+      <div class="spacer"></div> 
+      <p class="section-subtitle">Current web design certifications</p> 
+    <div class="row"> 
+      <div class="col-md-4"> <article class="education">  <h3>User Experience Design Certificate - George Brown College</h3> 
+            <p class="largetext">Certification program. </p> 
+          <p class="largetext">Specialization in UX/UI. This certificate provides a strong foundation in user experience (UX) design. Focused on advanced concepts of UX research and strategy, intuitive structure and best practices.</p> </article> 
+      </div> 
+      <div class="col-md-4"> <article class="education"> <h3>Responsive Website Development and Design - University of London, UK</h3> 
+            <p class="largetext">Six months certification program. </p> 
+          <p class="largetext">Learning about UX/UI, responsive websites, HTML, CSS, JavaScript, Meteor.js, JQuery and databases</p> </article> 
+      </div> 
+      <div class="col-md-4"> <article class="education"> <h3>Web Design Certificate - OCAD, Toronto</h3> 
+            <p class="largetext">Certification program.  </p> 
+          <p class="largetext">Deeper understanding of web design, development, SEO and statistics in one of the best art schools of Canada.</p> </article> 
+      </div> 
+    </div> 
+  </div> </section>
+<!-- Specialization ends -->
+  
+  
+  
+  <div id="aside4">
+ 
+	<div id="svgWeb">
+	<svg width="100%" viewBox="0 0 500 800"><text x="-425" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">photo</text></svg>
+	</div>
+</div>
     
     <!-- experience begins -->
-    <section id="page-experience" class="page-experience"> 
-  <div class="container"> <header class="section-header"> <h2 class="section-title"><span>Recent Experience</span></h2> 
+    <section id="page-experience"> 
+  <div class="container">  <h2 class="section-title"><span>Recent Experience</span></h2> 
       <div class="spacer"></div> 
-      <p class="section-subtitle">Major projects</p> </header> 
+      <p class="section-subtitle">Major projects</p> 
     <div class="row"> 
-      <div class="col-md-4"> <article class="experience"> <header> <h3>tudoaqui.ca</h3> 
-            <p class="largetext">Web developer and webmaster  / Toronto / 2011 - Current</p> </header> 
+      <div class="col-md-4"> <article class="experience"> <h3>tudoaqui.ca</h3> 
+            <p class="largetext">Web developer and webmaster  / Toronto / 2011 - Current</p> 
           <p class="largetext">I developed the entire online newspaper in 2011, as well all the settings, hosting and domain registration. One of the main features was the development of the largest database of Portuguese speaking businesses and professionals in Toronto GTA. I have also created all the artistic content: icons, logo and printed materials. The website was fully redesign to be responsive and reorganized based on Google Analytics findings.</p> </article> 
       </div> 
-      <div class="col-md-4"> <article class="experience"> <header> <h3>Run Unlimited</h3> 
-            <p class="largetext">Web developer  / Toronto / 2011 - 2014</p> </header> 
+      <div class="col-md-4"> <article class="experience">  <h3>Run Unlimited</h3> 
+            <p class="largetext">Web developer  / Toronto / 2011 - 2014</p> 
           <p class="largetext">This e-commerce website, logo, Flash animations and printed material were all developed by me. I set up hosting, domain registration and PayPal account as well. The company closed in 2014, but the website is still online as a sample. The purchase options are intentionally inactive.</p> </article> 
       </div> 
-      <div class="col-md-4"> <article class="experience"> <header> <h3>Ontario Ministry of Research and Innovation</h3> 
-            <p class="largetext">Project Manager / Toronto / 2010 - 2011</p> </header> 
+      <div class="col-md-4"> <article class="experience"> <h3>Ontario Ministry of Research and Innovation</h3> 
+            <p class="largetext">Project Manager / Toronto / 2010 - 2011</p> 
           <p class="largetext">The government of Ontario required a database with innovation metrics currently tracked by international innovation-related organizations. I led this project and also consolidated information from an inter-ministries inquiry about Innovation Programs in Ontario. And finally, I assisted Strategic Planning staff in developing performance measures for MRI programs</p> </article> 
       </div> 
     </div> 
-  </div> </section>    <!-- experience ends -->
+  </div> </section>    
+ <!-- experience ends -->
+  
+  
+   <div id="aside5">
+ 
+	<div id="svgWeb">
+	<svg width="100%" viewBox="0 0 500 800"><text x="-425" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">something</text></svg>
+	</div>
+</div> 
+  
+<!-- education begins -->
+   
+     <section id="page-education"> 
+  <div class="container">  <h2 class="section-title"><span>Education</span></h2> 
+      <div class="spacer"></div> 
+      <p class="section-subtitle">Academic degrees </p> 
+    <div class="row"> 
+      <div class="col-md-6"> <article class="education">  <h3>Universidade Federal de Minas Gerais, Brazil</h3> 
+            <p class="largetext">Bachelor of Science in Mechanical Engineering <strong>Graduated:</strong> 1999</p> 
+          <p class="largetext">UFMG is considered one of the best universities in Brazil. Accredited by WES-Ontario</p> </article> 
+      </div> 
+      <div class="col-md-6"> <article class="education"> <h3>UNA Management Sciences Faculty, Brazil</h3> 
+            <p class="largetext">Graduate studies of Business Management <strong>Graduated:</strong> 1995</p> 
+          <p class="largetext">1st. place in admission exams, among over 2,000 candidates. Accredited by WES-Ontario</p> </article> 
+      </div> 
+    </div> 
+  </div> </section>    
+<!-- education ends -->
+
+  
+<!--   footer begins -->
+ <footer> 
+         <h2 class="section-title"><span>Contact</span></h2> 
+		 <div> 
+			 <h4>You can reach me by e-mail</h4> 
+			 <p>e-mail: eduardo@torontobabel.com</p> 
+  		</div> 
+ </footer>
+<!--   footer ends -->
 
 </body>
 </html>
