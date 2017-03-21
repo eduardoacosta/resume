@@ -24,31 +24,54 @@
 h3 {font-size: 1.4em; padding-left: 2.5em; }
 body {font-family: 'Raleway', sans-serif; font-weight: 100; color: white; background-color: black;}
 
-/* =========NAVIGATION===========	 */
-.nav {color:gray; background-color: white; position: fixed; height: 5vh; width: 100vw; z-index: 100;}
-.navLink {display: inline; margin-right: 15vw; font-size: 2vw; padding-left: 12vw; padding-bottom: 1vh;}
 
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: #2c00ff;
+}
+
+/* selected link */
+a:active {
+    color: #6e6eff;
+}
+
+/* =========NAVIGATION===========	 */
+.nav {color:white; background-color: rgba(0, 0, 0, 0.7); height: 5vh; width: 50vw; z-index: 100; position: absolute; top: 10vh; right: 0vw;}
+.navLink {display: inline; font-size: 2vw; padding-left: 10vw; padding-right: 0vw; padding-bottom: 1vh; color:white;}
+.firstNav {margin-left: 10vw; padding-left: 0vw;}
 
 /* =========HEADER===========	 */
 header {width: 100vw; height: 100vh;}
-#videoContainer {position: relative;}
+#videoContainer {position: relative; -webkit-filter: grayscale(100%); filter: grayscale(100%);}
 video { 
     position: relative;
-    top: 10%;
-    left: 25%;
-    transform: scale(.5) translateX(-50%) translateY(-40%);
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-50%) translateY(0%);
     transition: 1s opacity;}
-#playvid {color: red; position: absolute; left: 35vw; top: 40vh; z-index: 3; margin:1em; font-size: 1.2em;}
+#playvid {color: red; position: absolute; left: 75vw; top: 80vh; z-index: 3; margin:1em; font-size: 1.2em;}
 
-#titles {background-color: black; width: 100vw; margin: 0; padding-bottom: 2em; position: relative; top: -35vh;}
+#titles {background-color: rgba(0, 0, 0, 0.77); width: 30vw; margin: 0; padding-bottom: 2em; position: relative; top: -40vh;}
 #namePro {background-color: transparent; font-size: 4vw; text-align: center;}
 .nameTitlePro {background-color: transparent; font-size: 2vw; color: #ffffff; text-align: center;}
 
 /* =========ASIDES and SECTIONS===========	 */
-#aside1 {float: left; width: 33vw; height: 60vh; background-color: black; margin: 0;}
+#aside1 {float: left; width: 33vw; height: 50vh; background-color: black; margin: 0;}
 .img-circle {border-radius: 50%;}
 #profile {border-radius: 20px; border-color: black; position: absolute; padding-top: 5vh; padding-left: 6vw; padding-right: 5vw;}
-#page-profile {float: left; height: 60vh; background-color: black;}
+#page-profile {float: left; height: 50vh; background-color: black;}
 
 #aside2 {float: left; width: 33vw; height: 100vh; background-color: #35eee8; margin: 0;}
 #page-education {float: left;  height: 100vh; background-color: yellow;}
@@ -91,7 +114,7 @@ footer {margin-top: 3em; background-color: black; width: 100vw; margin: 0; z-ind
 
 <div class="nav">
 	<div class:"row">
-		<div class="navLink"><a href="http://www.eduardo.work/index.html">Home</a></div>
+		<div class="navLink firstNav"><a href="http://www.eduardo.work/index.html">Home</a></div>
 		<div class="navLink"><a href="http://www.eduardo.work/index.html">Home</a></div> 
 		<div class="navLink"><a href="http://www.eduardo.work/index.html">Home</a></div>
 		
@@ -103,8 +126,8 @@ footer {margin-top: 3em; background-color: black; width: 100vw; margin: 0; z-ind
 <header>
 	<div id="videoContainer">
 		<video autoplay id="bgvid" loop muted>
-  		<source src="assets/videos/office.webm" type="video/webm">
-  		<source src="assets/videos/office.mp4" type="video/mp4">
+  		<source src="assets/videos/office2.webm" type="video/webm">
+  		<source src="assets/videos/office2.mp4" type="video/mp4">
 		</video>
 		<div id="playvid">Click on the video to pause/play</div>
 	</div>
