@@ -9,7 +9,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 <script src="js/main.js"></script>
-
+<script src="js/photos.js"></script>
+<script src="js/modals.js"></script>
 
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -23,7 +24,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 h3 {font-size: 1.4em; padding-left: 2.5em; }
 body {font-family: 'Raleway', sans-serif; font-weight: 100; color: white; background-color: black;}
-
+.section-title {margin-bottom: 10vh; font-size: 3vw;}
+#profile-title {margin-bottom: 1vh;}
 
 /* unvisited link */
 a:link {
@@ -46,9 +48,9 @@ a:active {
 }
 
 /* =========NAVIGATION===========	 */
-.nav {color:white; background-color: rgba(0, 0, 0, 0.7); height: 5vh; width: 50vw; z-index: 100; position: absolute; top: 10vh; right: 0vw;}
-.navLink {display: inline; font-size: 2vw; padding-left: 10vw; padding-right: 0vw; padding-bottom: 1vh; color:white;}
-.firstNav {margin-left: 10vw; padding-left: 0vw;}
+.nav {color:white; background-color: rgba(0, 0, 0, 0.7);  width: 70vw; z-index: 100; position: absolute; top: 10vh; right: 0vw;}
+.navLink {display: inline; font-size: 1.5vw; padding-left: 7vw; padding-right: 0vw; padding-bottom: 1vh; color:white;}
+.firstNav {margin-left: 5vw; padding-left: 0vw;}
 
 /* =========HEADER===========	 */
 header {width: 100vw; height: 100vh;}
@@ -61,29 +63,29 @@ video {
     height: 100vh;
     transform: translateX(-50%) translateY(0%);
     transition: 1s opacity;}
-#playvid {color: red; position: absolute; left: 75vw; top: 80vh; z-index: 3; margin:1em; font-size: 1.2em;}
+#playvid {color: !important red; position: absolute; left: 75vw; top: 80vh; z-index: 3; margin:1em; font-size: 1.2em;}
 
 #titles {background-color: rgba(0, 0, 0, 0.77); width: 30vw; margin: 0; padding-bottom: 2em; position: relative; top: -40vh;}
 #namePro {background-color: transparent; font-size: 4vw; text-align: center;}
 .nameTitlePro {background-color: transparent; font-size: 2vw; color: #ffffff; text-align: center;}
 
 /* =========ASIDES and SECTIONS===========	 */
-#aside1 {float: left; width: 33vw; height: 50vh; background-color: black; margin: 0;}
-.img-circle {border-radius: 50%;}
-#profile {border-radius: 20px; border-color: black; position: absolute; padding-top: 5vh; padding-left: 6vw; padding-right: 5vw;}
-#page-profile {float: left; height: 50vh; background-color: black;}
+#aside1 {float: left; width: 33vw; height: 45vh; background-color: black; margin: 0;}
+.img-circle {border-radius: 50%; height: 30vh;}
+#profile2 {border-radius: 20px; border-color: black; position: absolute; padding-top: 5vh; padding-left: 6vw; padding-right: 5vw;}
+#page-profile {float: left; height: 45vh; background-color: black;}
 
 #aside2 {float: left; width: 33vw; height: 100vh; background-color: #35eee8; margin: 0;}
-#page-education {float: left;  height: 100vh; background-color: yellow;}
+#page-UX {float: left;  height: 100vh; background-color: #29939a;}
 
 #aside3 {float: left; width: 33vw; height: 100vh; background-color: #3fbf3f; margin: 0;}
-#page-skills {float: left;  height: 100vh; background-color: #29939a;}
+#page-web {float: left;  height: 100vh; background-color: #47475c;}
 
 #aside4 {float: left; width: 33vw; height: 100vh; background-color: #3e35ee; margin: 0;}
-#page-specialization {float: left;  height: 100vh; background-color: #47475c;}
+#page-project {float: left; height: 100vh; background-color: #1b4e2f;}
 
-#aside5 {float: left; width: 33vw; height: 100vh; background-color: #eed935; margin: 0;}
-#page-experience {float: left; height: 100vh; background-color: #1b4e2f;}
+#aside5 {float: left; width: 33vw; height: 100vh; background-color: #FFCD05; margin: 0;}
+#page-photo {float: left;  height: 100vh; background-color: black;}
 
 /* =========MAIN SECTION===========	 */
 
@@ -101,6 +103,119 @@ video {
 .largetext { font-size: 1.2em;}
 
 
+/* =========UI/UX SECTION===========	 */
+
+
+
+
+
+/* =========WEB SECTION===========	 */
+
+.skillsList {font-size: 1.5vw;}
+
+
+/* =========PROJECT SECTION===========	 */
+
+
+
+
+/* =========PHOTOGRAPHY SECTION===========	 */
+
+.photoA {width: 15vw; margin-left: 5vw; margin-bottom: 5vw;}
+.photoB {width: 15vw; margin-left: 5vw; margin-bottom: 5vw;}
+.photos {-webkit-filter: grayscale(100%); filter: grayscale(100%);}
+
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #fcfbfb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+
+
+
 /* =========FOOTER===========	 */
 
 footer {margin-top: 3em; background-color: black; width: 100vw; margin: 0; z-index: 5; padding-bottom: 2em; float:left; text-align: center;}
@@ -113,11 +228,12 @@ footer {margin-top: 3em; background-color: black; width: 100vw; margin: 0; z-ind
 <!-- ============NAV======================= -->
 
 <div class="nav">
-	<div class:"row">
-		<div class="navLink firstNav"><a href="http://www.eduardo.work/index.html">Home</a></div>
-		<div class="navLink"><a href="http://www.eduardo.work/index.html">Home</a></div> 
-		<div class="navLink"><a href="http://www.eduardo.work/index.html">Home</a></div>
-		
+	<div class="row">
+		<div class="navLink firstNav"><a href="#UI/UX">UI/UX</a></div>
+		<div class="navLink"><a href="#web">Web</a></div> 
+		<div class="navLink"><a href="#web">Projects</a></div> 		
+		<div class="navLink"><a href="#photography">Photography</a></div>
+		<div class="navLink"><a href="resume.html">Resume</a></div>		
 	</div>
 </div>
 
@@ -145,15 +261,15 @@ footer {margin-top: 3em; background-color: black; width: 100vw; margin: 0; z-ind
 <div id="blockProfile">
 	<div id="aside1">
 	 
-	    <div id="profile"><img  class="img-circle" alt="profile" src="assets/images/profile.jpg" /></div> 
-	    <div id="svgWeb">
+	    <div id="profile2"><img  class="img-circle" alt="profile" src="assets/images/profile2b.png" /></div> 
+	    <div class="svgWeb">
 			<svg width="100%" viewBox="0 0 500 800"><text x="-575" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)"></text></svg>
 		</div>
 	</div>
 
    <section id="page-profile" class="page-profile"> 
-  <div class="container"><h2 class="section-title"><span>Personal Profile</span></h2> 
-      <div class="spacer"></div> 
+  <div class="container"><h2 class="section-title" id="profile-title">Personal Profile</h2> 
+
 
     <div class="row"> 
 
@@ -168,130 +284,227 @@ footer {margin-top: 3em; background-color: black; width: 100vw; margin: 0; z-ind
   
  
     <!-- profile ends -->
-      
+    <!-- UI/UX begins -->
+    
+    
+          
 <div id="aside2"> 
-	<div id="svgWeb">
-	<svg width="100%" viewBox="0 0 500 800"><text x="-425" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">UI/UX</text></svg>
+	<div>
+		<a name="UI/UX"></a> 
+		<svg width="100%" viewBox="0 0 500 800"><text x="-425" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">UI/UX</text></svg>
 	</div>
 </div>
+      
+    
+<section id="page-UX"> 
+  <div class="container"> <h2 class="section-title">UI/UX Specialist</h2> 
+ 
+ Information Architecture
+ UX Strategy
+ Usability Testing
+ 
+ UI software - Sketch
+ 
+ Design:
+ Theory
+ Typography
+ Color
+ Elements
+ Taxonomy
+ 
+ 
+<img id="wireframe" src="assets/images/wireframe.svg" alt="image">
+<img id="wireframe2" src="assets/images/wireframe2.svg" alt="image">
+<img id="prototype" src="assets/images/prototype.svg" alt="image">
+<img id="pyramid" src="assets/images/pyramid.svg" alt="image"> 
+ 
+  </div> 
+</section> 
     
     
+    <!-- UI/UX ends -->
     
-    <!-- skills begins -->
-    
-    
-    <section id="page-skills"> 
-  <div class="container"> <h2 class="section-title"><span>Specialization</span></h2> 
-      <div class="spacer"></div> 
-      <p class="section-subtitle">Current web design certifications</p>
-    <div class="row"> 
-      <div class="col-md-4"> <article class="education">
-	       <h3>User Experience Design Certificate - George Brown College</h3> 
-            <p class="largetext">Certification program. </p> 
-          <p class="largetext">Specialization in UX/UI. This certificate provides a strong foundation in user experience (UX) design. Focused on advanced concepts of UX research and strategy, intuitive structure and best practices.</p> </article> 
-      </div> 
-      <div class="col-md-4"> <article class="education">  <h3>Responsive Website Development and Design - University of London, UK</h3> 
-            <p class="largetext">Six months certification program. </p> 
-          <p class="largetext">Learning about UX/UI, responsive websites, HTML, CSS, JavaScript, Meteor.js, JQuery and databases</p> </article> 
-      </div> 
-      <div class="col-md-4"> <article class="education"> <h3>Web Design Certificate - OCAD, Toronto</h3> 
-            <p class="largetext">Certification program.  </p> 
-          <p class="largetext">Deeper understanding of web design, development, SEO and statistics in one of the best art schools of Canada.</p> </article> 
-      </div> 
-    </div> 
-  </div> </section> 
-    
-    
-    <!-- skills ends -->
-    
-
+    <!-- Web begins -->
   
   
 <div id="aside3"> 
-	<div id="svgWeb">
-	<svg width="100%" viewBox="0 0 500 800"><text x="-375" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">web</text></svg>
+	<div>
+		<a name="web"></a> 
+		<svg width="100%" viewBox="0 0 500 800"><text x="-375" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">web</text></svg>
 	</div>
 </div>
     
-    <!-- Specialization begins -->
-    <section id="page-specialization"> 
-  <div class="container">  <h2 class="section-title"><span>Specialization</span></h2> 
-      <div class="spacer"></div> 
-      <p class="section-subtitle">Current web design certifications</p> 
-    <div class="row"> 
-      <div class="col-md-4"> <article class="education">  <h3>User Experience Design Certificate - George Brown College</h3> 
-            <p class="largetext">Certification program. </p> 
-          <p class="largetext">Specialization in UX/UI. This certificate provides a strong foundation in user experience (UX) design. Focused on advanced concepts of UX research and strategy, intuitive structure and best practices.</p> </article> 
-      </div> 
-      <div class="col-md-4"> <article class="education"> <h3>Responsive Website Development and Design - University of London, UK</h3> 
-            <p class="largetext">Six months certification program. </p> 
-          <p class="largetext">Learning about UX/UI, responsive websites, HTML, CSS, JavaScript, Meteor.js, JQuery and databases</p> </article> 
-      </div> 
-      <div class="col-md-4"> <article class="education"> <h3>Web Design Certificate - OCAD, Toronto</h3> 
-            <p class="largetext">Certification program.  </p> 
-          <p class="largetext">Deeper understanding of web design, development, SEO and statistics in one of the best art schools of Canada.</p> </article> 
-      </div> 
-    </div> 
+
+    <section id="page-web"> 
+  <div class="container">  <h2 class="section-title">Front-end Developer</h2> 
+
+<img id="htmlSVG" src="assets/images/html.svg" alt="image">
+<img id="cssSVG" src="assets/images/css.svg" alt="image">
+<img id="jsSVG" src="assets/images/js.svg" alt="image">
+
+<h2>Skills</h2>
+<div class="container">
+<div class="row col-md-6">
+<ul class="skillsList">
+<li>HTML 5</li>
+<li>CSS 3 with Flexbox</li>
+<li>Javascript</li>
+<li>jQuery</li>
+<li>Photoshop</li>
+<li>Illustrator</li>
+<li>Lightroom</li>
+</ul>
+</div>
+<div class="row col-md-6">
+<ul class="skillsList">
+<li>Bootstrap</li>
+<li>Sketch</li>
+<li>GitHub</li>
+<li>Unix for OS X</li>
+<li>Angular 2 (learning)</li>
+<li>LESS/SASS</li>
+<li>JIRA</li>
+</ul>
+</div>
+</div>
+
+
+
+
+
   </div> </section>
-<!-- Specialization ends -->
+
+  <!-- Web ends -->
   
-  
+  <!-- Project begins -->
   
   <div id="aside4">
  
-	<div id="svgWeb">
-	<svg width="100%" viewBox="0 0 500 800"><text x="-425" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">photo</text></svg>
+	<div>
+		<a name="projects"></a> 
+		<svg width="100%" viewBox="0 0 500 800"><text x="-525" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">projects</text></svg>
 	</div>
 </div>
     
-    <!-- experience begins -->
-    <section id="page-experience"> 
-  <div class="container">  <h2 class="section-title"><span>Recent Experience</span></h2> 
-      <div class="spacer"></div> 
-      <p class="section-subtitle">Major projects</p> 
-    <div class="row"> 
-      <div class="col-md-4"> <article class="experience"> <h3>tudoaqui.ca</h3> 
-            <p class="largetext">Web developer and webmaster  / Toronto / 2011 - Current</p> 
-          <p class="largetext">I developed the entire online newspaper in 2011, as well all the settings, hosting and domain registration. One of the main features was the development of the largest database of Portuguese speaking businesses and professionals in Toronto GTA. I have also created all the artistic content: icons, logo and printed materials. The website was fully redesign to be responsive and reorganized based on Google Analytics findings.</p> </article> 
-      </div> 
-      <div class="col-md-4"> <article class="experience">  <h3>Run Unlimited</h3> 
-            <p class="largetext">Web developer  / Toronto / 2011 - 2014</p> 
-          <p class="largetext">This e-commerce website, logo, Flash animations and printed material were all developed by me. I set up hosting, domain registration and PayPal account as well. The company closed in 2014, but the website is still online as a sample. The purchase options are intentionally inactive.</p> </article> 
-      </div> 
-      <div class="col-md-4"> <article class="experience"> <h3>Ontario Ministry of Research and Innovation</h3> 
-            <p class="largetext">Project Manager / Toronto / 2010 - 2011</p> 
-          <p class="largetext">The government of Ontario required a database with innovation metrics currently tracked by international innovation-related organizations. I led this project and also consolidated information from an inter-ministries inquiry about Innovation Programs in Ontario. And finally, I assisted Strategic Planning staff in developing performance measures for MRI programs</p> </article> 
-      </div> 
-    </div> 
+    
+    <section id="page-project"> 
+  <div class="container">  <h2 class="section-title"><span>Project Manager</span></h2> 
+
+
+
+
+
+
+
   </div> </section>    
- <!-- experience ends -->
+ <!-- Project ends -->
   
-  
+ <!-- photography begins --> 
    <div id="aside5">
  
-	<div id="svgWeb">
-	<svg width="100%" viewBox="0 0 500 800"><text x="-425" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">something</text></svg>
+	<div>
+		<a name="photography"></a> 
+		<svg width="100%" viewBox="0 0 500 800"><text x="-425" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">photos</text></svg>
 	</div>
 </div> 
   
-<!-- education begins -->
+
    
-     <section id="page-education"> 
-  <div class="container">  <h2 class="section-title"><span>Education</span></h2> 
-      <div class="spacer"></div> 
-      <p class="section-subtitle">Academic degrees </p> 
-    <div class="row"> 
-      <div class="col-md-6"> <article class="education">  <h3>Universidade Federal de Minas Gerais, Brazil</h3> 
-            <p class="largetext">Bachelor of Science in Mechanical Engineering <strong>Graduated:</strong> 1999</p> 
-          <p class="largetext">UFMG is considered one of the best universities in Brazil. Accredited by WES-Ontario</p> </article> 
-      </div> 
-      <div class="col-md-6"> <article class="education"> <h3>UNA Management Sciences Faculty, Brazil</h3> 
-            <p class="largetext">Graduate studies of Business Management <strong>Graduated:</strong> 1995</p> 
-          <p class="largetext">1st. place in admission exams, among over 2,000 candidates. Accredited by WES-Ontario</p> </article> 
-      </div> 
-    </div> 
-  </div> </section>    
-<!-- education ends -->
+     <section id="page-photo"> 
+  <div class="container">  <h2 class="section-title">Photography</h2> 
+
+
+<div id="galleryB">
+
+<!-- <img id="myImg" src="img_fjords.jpg" alt="Trolltunga, Norway" width="300" height="200"> -->
+
+
+
+
+<img class="photoA photos" id="myImg1" src="images/28.jpg" alt="image">
+<div id="myModal1" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<img class="photoB photos" id="myImg2" src="images/29.jpg" alt="image">
+<div id="myModal2" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img02">
+  <div id="caption2"></div>
+</div>
+
+<img class="photoA photos" id="myImg3" src="images/30.jpg" alt="image">
+<div id="myModal3" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img03">
+  <div id="caption3"></div>
+</div>
+
+<img class="photoB photos" id="myImg4" src="images/31.jpg" alt="image">
+<div id="myModal4" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img04">
+  <div id="caption4"></div>
+</div>
+
+<img class="photoA photos" id="myImg5" src="images/32.jpg" alt="image">
+<div id="myModal5" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img05">
+  <div id="caption5"></div>
+</div>
+
+<img class="photoB photos" id="myImg6" src="images/26.jpg" alt="image">
+<div id="myModal6" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img06">
+  <div id="caption6"></div>
+</div>
+
+<img class="photoA photos" id="myImg7" src="images/34.jpg" alt="image">
+<div id="myModal7" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img07">
+  <div id="caption7"></div>
+</div>
+
+<img class="photoB photos" id="myImg8" src="images/35.jpg" alt="image">
+<div id="myModal8" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img08">
+  <div id="caption8"></div>
+</div>
+
+<img class="photoA photos" id="myImg9" src="images/36.jpg" alt="image">
+<div id="myModal9" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img09">
+  <div id="caption9"></div>
+</div>
+
+</div>
+
+
+
+  </div> </section>   
+  
+  
+<script src="js/modals.js"></script>  
+   
+<!-- photography ends -->
+
+
+
+
+
+
+
+
+
+
+
 
   
 <!--   footer begins -->
