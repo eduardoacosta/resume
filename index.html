@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -12,235 +12,21 @@
 <script src="js/photos.js"></script>
 <script src="js/modals.js"></script>
 
-<link rel="stylesheet" type="text/css" href="css/reset.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!-- <link rel="stylesheet" type="text/css" href="css/professional.css"> -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/stylesIndex.css">
 
 <title>Eduardo Costa</title>
 </head>
 <body>
-<style>
-/* =========FONT AND GENERAL===========	 */
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-h3 {font-size: 1.4em; padding-left: 2.5em; }
-body {font-family: 'Raleway', sans-serif; font-weight: 100; color: white; background-color: black;}
-.section-title {margin-bottom: 10vh; font-size: 3vw;}
-#profile-title {margin-bottom: 1vh;}
-
-/* unvisited link */
-a:link {
-    color: white;
-}
-
-/* visited link */
-a:visited {
-    color: white;
-}
-
-/* mouse over link */
-a:hover {
-    color: #2c00ff;
-}
-
-/* selected link */
-a:active {
-    color: #6e6eff;
-}
-
-/* =========NAVIGATION===========	 */
-.nav {color:white; background-color: rgba(0, 0, 0, 0.7);  width: 70vw; z-index: 100; position: absolute; top: 10vh; right: 0vw;}
-.navLink {display: inline; font-size: 1.5vw; padding-left: 7vw; padding-right: 0vw; padding-bottom: 1vh; color:white;}
-.firstNav {margin-left: 5vw; padding-left: 0vw;}
-
-/* =========HEADER===========	 */
-header {width: 100vw; height: 100vh;}
-#videoContainer {position: relative; -webkit-filter: grayscale(100%); filter: grayscale(100%);}
-video { 
-    position: relative;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 100vh;
-    transform: translateX(-50%) translateY(0%);
-    transition: 1s opacity;}
-#playvid {color: !important red; position: absolute; left: 75vw; top: 80vh; z-index: 3; margin:1em; font-size: 1.2em;}
-
-#titles {background-color: rgba(0, 0, 0, 0.77); width: 30vw; margin: 0; padding-bottom: 2em; position: relative; top: -40vh;}
-#namePro {background-color: transparent; font-size: 4vw; text-align: center;}
-.nameTitlePro {background-color: transparent; font-size: 2vw; color: #ffffff; text-align: center;}
-
-/* =========ASIDES and SECTIONS===========	 */
-#aside1 {float: left; width: 33vw; height: 45vh; background-color: black; margin: 0;}
-.img-circle {border-radius: 50%; height: 30vh;}
-#profile2 {border-radius: 20px; border-color: black; position: absolute; padding-top: 5vh; padding-left: 6vw; padding-right: 5vw;}
-#page-profile {float: left; height: 45vh; background-color: black;}
-
-#aside2 {float: left; width: 33vw; height: 100vh; background-color: #35eee8; margin: 0;}
-#page-UX {float: left;  height: 100vh; background-color: #29939a;}
-
-#aside3 {float: left; width: 33vw; height: 100vh; background-color: #3fbf3f; margin: 0;}
-#page-web {float: left;  height: 100vh; background-color: #47475c;}
-
-#aside4 {float: left; width: 33vw; height: 100vh; background-color: #3e35ee; margin: 0;}
-#page-project {float: left; height: 100vh; background-color: #1b4e2f;}
-
-#aside5 {float: left; width: 33vw; height: 100vh; background-color: #FFCD05; margin: 0;}
-#page-photo {float: left;  height: 100vh; background-color: black;}
-
-
-/* =========MAIN SECTION===========	 */
-
-#svgWeb {position: relative; top: 4vh; left: 3vw; z-index: 2;}
-/*
-.container {float: left; width: 67vw; clear: both; }
-.section-title {padding-left: 1.1em;}
-.section-subtitle {padding-left: 3em;}
-.largetext {padding-left: 3em; font-size: 1.2em;}
-*/
-
-
-.container {float: left; width: 65.8vw; padding-left: 1.1em; clear: both; }
-
-.largetext { font-size: 1.2em;}
-
-
-/* =========UI/UX SECTION===========	 */
 
 
 
+<div id="content">
 
-
-/* =========WEB SECTION===========	 */
-
-.skillsList {font-size: 1.5vw;}
-
-
-/* =========PROJECT SECTION===========	 */
-
-
-
-
-/* =========PHOTOGRAPHY SECTION===========	 */
-
-
-
-.photoA {width: 15vw; margin-left: 5vw; margin-bottom: 5vw;}
-.photoB {width: 15vw; margin-left: 5vw; margin-bottom: 5vw;}
-.photos {-webkit-filter: grayscale(100%); filter: grayscale(100%);}
-#photoInstruction {margin-top: -5vh; margin-bottom: 7.1vh; display: block;}
-
-/* =========PHOTOGRAPHY MODAL===========	 */
-
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {    
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #ffffff;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #fcfbfb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
-
-
-
-
-
-/* =========FOOTER===========	 */
-
-footer {margin-top: 3em; background-color: black; width: 100vw; margin: 0; z-index: 5; padding-bottom: 2em; float:left; text-align: center;}
-
-</style>
-
-
-
-
-<!-- ============NAV======================= -->
-
-<div class="nav">
-	<div class="row">
-		<div class="navLink firstNav"><a href="#UI/UX">UI/UX</a></div>
-		<div class="navLink"><a href="#web">Web</a></div> 
-		<div class="navLink"><a href="#projects">Projects</a></div> 		
-		<div class="navLink"><a href="#photography">Photography</a></div>
-		<div class="navLink"><a href="resume.html">Resume</a></div>		
-	</div>
-</div>
 
 <!-- ============HEADER======================= -->
 
@@ -249,252 +35,303 @@ footer {margin-top: 3em; background-color: black; width: 100vw; margin: 0; z-ind
 		<video autoplay id="bgvid" loop muted>
   		<source src="assets/videos/office2.webm" type="video/webm">
   		<source src="assets/videos/office2.mp4" type="video/mp4">
-		</video>
-		<div id="playvid">Click on the video to pause/play</div>
+		</video>		
 	</div>
-  
+ 
+
+<!-- ============NAV======================= --> 
+	<div class="navBAR">
+		<div class="row">
+			<div class="navLink"><a href="resume.html">Resume</a></div>		
+			<div class="navLink"><a href="photography.html">Photographies</a></div>
+			<div class="navLink"><a href="#contact">Contact</a></div> 		
+		</div>
+	</div> 
 	
 	<div id="titles">
 		<p id="namePro">Eduardo Costa</p>
 		<p class="nameTitlePro">UI/UX specialist and</p>
 		<p class="nameTitlePro">Front-end developer</p>
 	</div>
+	
+	<div id="playvid">Click on the video to pause/play</div>
 </header>
 
 <!-- ============PROFILE======================= -->
 
-<div id="blockProfile">
-	<div id="aside1">
-	 
-	    <div id="profile2"><img  class="img-circle" alt="profile" src="assets/images/profile2b.png" /></div> 
-	    <div class="svgWeb">
-			<svg width="100%" viewBox="0 0 500 800"><text x="-575" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)"></text></svg>
-		</div>
-	</div>
-
-<section id="page-profile" class="page-profile"> 
-  <div class="container">
-	<h2 class="section-title" id="profile-title">Personal Profile</h2> 
+<section>	
+<div class="container">	  
     <div class="row">
-      <div class="col-md-9 largetext"> 
-        <p>I am a well-rounded professional with experience in developing, creating and delivering solutions for users and clients. </p> 
-        <p>Along my career, I had a chance to work and to participate in projects for diverse business, from IBM to small companies and government. I have been creating logical and innovative solutions to complex problems.</p> 
-        <p>I have a passion for web design and web development. I keep myself updated with the latest technologies. I have a keen interest in design and UX/UI.</p> 
-        <p>And finally, I am also a marathon runner, meetup group organizer and avid reader and photographer.</p>
-      </div> 
+	    <div class="col-md-3" id="aside1">
+			<img class="img-circle img-responsive" alt="profile" src="assets/images/profile2b.png"/>
+		</div> 
+		
+		<div class="col-md-9" id="page-profile">
+			<h2>Personal Profile</h2> 
+				<div class="profileText"> 
+					<p>I am UI/UX specialist, with of a lot of experience in managing projects, and some experience in front-end development.</p>
+					<p>Along my career, I had a chance to work and to participate in projects for diverse business: IBM, Embraer, small companies and Ontario government.</p>
+					<p>I have a passion for UI/UX and web design. I am also a marathon runner, meetup group organizer and photographer.</p> 
+	        	</div>
+	    </div> 
     </div> 
-  </div>
-</section>
-  
- 
+</did>
+
+</section> 
     <!-- profile ends -->
     <!-- UI/UX begins -->
     
+
+ 
     
-          
-<div id="aside2"> 
-	<div>
-		<a name="UI/UX"></a> 
-		<svg width="100%" viewBox="0 0 500 800"><text x="-425" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">UI/UX</text></svg>
+<section>
+
+
+<div class="container">    
+	<div class="row">
+		<div class="col-md-3 forceHide" id="aside2"> 	
+								<div class="forceHide"><svg width="100%" viewBox="0 0 500 800"><text x="-375" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">UI/UX</text></svg></div>
+		</div>
+
+
+
+		<div class="col-md-9" id="page-UX"> 	
+		 
+	        			<h2>UI/UX Specialist</h2>
+							  <h3>How can I help?</h3>
+		</br>
+							  <p class="keywords">> Practical experience and academic knowledge: George Brown certification</p>
+							  <p class="keywords">> UX Strategy and Information Architecture</p>
+							  
+							  <p class="keywords">> Strategy > Scope > Structure > Skeleton > Surface</p>
+							  <p class="keywords">> UI/UX software - Sketch, Photoshop, Illustrator, Lightroom and others</p>	
+							  
+							  <p class="keywords">> Usability Testing</p>								  	
+							  <p class="keywords">> Knowledge of several UX techniques</p>					     	
+
+							  <p class="keywords">> Design Principles</p>
+							  <p class="keywords">> Layout, color and typography</p>						  
+							  <p class="keywords">> Wireframes, Prototypes and mockups designer:</p>
+							  <img id="wireframe" src="assets/images/wireframe.svg" alt="image">
+							  <img id="wireframe2" src="assets/images/wireframe2.svg" alt="image">
+							  <img id="prototype" src="assets/images/prototype.svg" alt="image">
+							  </br>
+				   		
+
+							  </br>
+				   		  
+
+	  </div>
+
 	</div>
 </div>
-      
-    
-<section id="page-UX"> 
-  <div class="container"> <h2 class="section-title">UI/UX Specialist</h2> 
- 
- Information Architecture
- UX Strategy
- Usability Testing
- 
- UI software - Sketch
- 
- Design:
- Theory
- Typography
- Color
- Elements
- Taxonomy
- 
- 
-<img id="wireframe" src="assets/images/wireframe.svg" alt="image">
-<img id="wireframe2" src="assets/images/wireframe2.svg" alt="image">
-<img id="prototype" src="assets/images/prototype.svg" alt="image">
-<img id="pyramid" src="assets/images/pyramid.svg" alt="image"> 
- 
-  </div> 
-</section> 
-    
-    
-    <!-- UI/UX ends -->
-    
+</section>
+  
+    <!-- UI/UX ends -->   
     <!-- Web begins -->
-  
-  
-<div id="aside3"> 
-	<div>
-		<a name="web"></a> 
-		<svg width="100%" viewBox="0 0 500 800"><text x="-375" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">web</text></svg>
-	</div>
-</div>
     
 
-    <section id="page-web"> 
-  <div class="container">  <h2 class="section-title">Front-end Developer</h2> 
 
-<img id="htmlSVG" src="assets/images/html.svg" alt="image">
-<img id="cssSVG" src="assets/images/css.svg" alt="image">
-<img id="jsSVG" src="assets/images/js.svg" alt="image">
 
-<h2>Skills</h2>
-<div class="container">
-<div class="row col-md-6">
-<ul class="skillsList">
-<li>HTML 5</li>
-<li>CSS 3 with Flexbox</li>
-<li>Javascript</li>
-<li>jQuery</li>
-<li>Photoshop</li>
-<li>Illustrator</li>
-<li>Lightroom</li>
-</ul>
+<section>
+<div class="container">    
+	<div class="row">
+		<div class="col-md-3 col-sm-12 col-sx-12" id="aside3"> 	
+		<svg width="100%" viewBox="0 0 500 800"><text x="-375" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">web</text></svg>
+		</div>
+	
+		<div class="col-md-9 col-sm-12 col-sx-12" id="page-web"> 	
+		    <h2>Junior Front-end Developer</h2>
+	        <h3>What can I do?</h3>
+	        
+				<p class="keywords">> Advanced HTML, XML CSS and Bootstrap</p>
+				<p class="keywords">> Responsive Website Design</p>				
+				<p class="keywords">> CSS Flex Box</p>											  	
+				<p class="keywords">> Intermediate jQuery and SVG</p>
+				<p class="keywords">> Basic Javascript</p>
+				<p class="keywords">> Basic Ruby, Ruby on Rails and SQL</p>				
+				<p class="keywords">> Git, Git Hub and Unix for OS X</p>												     	
+				<p class="keywords">> These skills were used to develop this website</p>
+	        
+				<img id="icons" class="img-responsive" src="assets/images/icons.svg" alt="image">
+		          
+		</div>
+
+	</div>
 </div>
-<div class="row col-md-6">
-<ul class="skillsList">
-<li>Bootstrap</li>
-<li>Sketch</li>
-<li>GitHub</li>
-<li>Unix for OS X</li>
-<li>Angular 2 (learning)</li>
-<li>LESS/SASS</li>
-<li>JIRA</li>
-</ul>
-</div>
-</div>
+</section>
 
 
 
 
 
-  </div> </section>
+
 
   <!-- Web ends -->
   
   <!-- Project begins -->
-  
-  <div id="aside4">
+
+
+<section>
+<div class="container">    
+	<div class="row">
+		<div class="col-md-3" id="aside4"> 	
+		<svg width="100%" viewBox="0 0 500 800"><text x="-525" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">projects</text></svg>	
+		</div>
+	
+		<div class="col-md-9" id="page-project"> 	
+		    <h2>Project Manager</h2>
+	        <h3>Major projects</h3> 
+
+				<p class="keywords">> tudoaqui.ca online newspaper development - complete makeover with responsive design</p>	
+				<p class="keywords">> run unlimited ecommerce website development</p>	
+				<p class="keywords">> tudoaqui.ca online newspaper development - original version</p>	
+				<p class="keywords">> Ontario Government - key performance indicators developed for government funding</p>	
+				<p class="keywords">> Embraer - business intelligence implementation</p>
+				<p class="keywords">> IBM - marketing campaign design</p>					
+				<p class="keywords">> several smaller projects</p>	
  
-	<div>
-		<a name="projects"></a> 
-		<svg width="100%" viewBox="0 0 500 800"><text x="-525" y="230" fill="white" font-size = "150" transform="rotate(-90,100,100)">projects</text></svg>
+ 
+ 
+        
+	        <blockquote>Eduardo has excellent research and analytical skills. His technical background enables him to synthesize disparate and competing sets of information, balance objectives ... to ensure that both quality and impact are being measured. <cite>By R. Franklin, Ontario Government Senior Advisor</cite></blockquote>
+	        
+	        <blockquote>Eduardo designed a program map for each of the funds, which clearly described a program map for each of the funds... Staff and management were so impressed with the clarity of the program that it was suggested that a map be designed for each Ministry's programs. <cite>By B. Brownlee, Ontario Government Senior Policy Advisor</cite></blockquote>
+	       
+			<div class="row projectImagesGroup">
+				<img class="projectImages" src="assets/images/cardSorting.jpg" alt="image">
+				<img class="projectImages" src="assets/images/tudoaqui.png" alt="image">
+				<img class="projectImages" src="assets/images/icelandOne.png" alt="image">
+				<img class="projectImages" src="assets/images/calc.png" alt="image">
+				<img class="projectImages" src="assets/images/salao.png" alt="image">
+				<img class="projectImages" src="assets/images/wot.png" alt="image">
+				<img class="projectImages" src="assets/images/rununlimited.png" alt="image">				
+				
+				
+				
+				
+				
+				
+			</div>
+	        
+<!-- 	        <blockquote>His professional attitude was marked by enthusiasm and objectivity, delivering works designated to him quickly and with quality.	          <cite>By N. Salgado, Embraer Corporate Planning Director</cite></blockquote> -->
+        
+	        
+	        		          
+		</div>
+
 	</div>
 </div>
-    
-    
-    <section id="page-project"> 
-  <div class="container">  <h2 class="section-title"><span>Project Manager</span></h2> 
 
+</section>    
 
-
-
-
-
-
-  </div> </section>    
  <!-- Project ends -->
   
- <!-- photography begins --> 
-   <div id="aside5">
+ <!-- photography begins -->
+
  
-	<div>
-		<a name="photography"></a> 
-		<svg width="100%" viewBox="0 0 500 800"><text x="-425" y="230" fill="black" font-size = "150" transform="rotate(-90,100,100)">photos</text></svg>
+ 
+<section>
+
+<div class="container">    
+	<div class="row">
+		<div class="col-md-3" id="aside5"> 	
+			<svg width="100%" viewBox="0 0 500 800"><text x="-425" y="230" fill="black" font-size = "150" transform="rotate(-90,100,100)">photos</text></svg>	          
+		</div>
+	
+		<div class="col-md-9"> 	
+			   
+		  <div class="container">
+			  <div class="row">
+			    <div class="col-md-9" id="page-photo"> 	  
+					<h2>Photography</h2>
+		
+					<p class="keywords">Digital photography, editing and publishing</p>
+		
+					<p id="photoInstruction">Hover over to see in color or click to enlarge</p>
+					<p id="linkToGallery"><a href="photography.html">Or click here to see the entire photos gallery</a></p>
+		
+		
+					<div id="galleryB">
+						<img class="photoA photos PhotosOneColumn" id="myImg1" src="assets/portfolio/selected/_DSC5701.jpg" alt="image">
+						<div id="myModal1" class="modal">
+						  <span class="close">&times;</span>
+						  <img class="modal-content" id="img01">
+						  <div id="caption"></div>
+						</div>
+						
+						<img class="photoB photos PhotosOneColumn" id="myImg2" src="assets/portfolio/selected/_DSC0472.jpg" alt="image">
+						<div id="myModal2" class="modal">
+						  <span class="close">&times;</span>
+						  <img class="modal-content" id="img02">
+						  <div id="caption2"></div>
+						</div>
+						
+						<img class="photoA photos PhotosOneColumn" id="myImg3" src="assets/portfolio/selected/_DSC2392.jpg" alt="image">
+						<div id="myModal3" class="modal">
+						  <span class="close">&times;</span>
+						  <img class="modal-content" id="img03">
+						  <div id="caption3"></div>
+						</div>
+						
+						<img class="photoB photos PhotosOneColumn" id="myImg4" src="assets/portfolio/selected/IMG_6003.jpg" alt="image">
+						<div id="myModal4" class="modal">
+						  <span class="close">&times;</span>
+						  <img class="modal-content" id="img04">
+						  <div id="caption4"></div>
+						</div>
+						
+						<img class="photoA photos PhotosOneColumn" id="myImg5" src="assets/portfolio/selected/_DSC1228.jpg" alt="image">
+						<div id="myModal5" class="modal">
+						  <span class="close">&times;</span>
+						  <img class="modal-content" id="img05">
+						  <div id="caption5"></div>
+						</div>
+						
+						<img class="photoB photos PhotosOneColumn" id="myImg6" src="assets/portfolio/selected/_DSC5773.jpg" alt="image">
+						<div id="myModal6" class="modal">
+						  <span class="close">&times;</span>
+						  <img class="modal-content" id="img06">
+						  <div id="caption6"></div>
+						</div>
+						
+						<img class="photoA photos PhotosOneColumn" id="myImg7" src="assets/portfolio/selected/_DSC1937.jpg" alt="image">
+						<div id="myModal7" class="modal">
+						  <span class="close">&times;</span>
+						  <img class="modal-content" id="img07">
+						  <div id="caption7"></div>
+						</div>
+						
+						<img class="photoB photos PhotosOneColumn" id="myImg8" src="assets/portfolio/selected/_DSC2654.jpg" alt="image">
+						<div id="myModal8" class="modal">
+						  <span class="close">&times;</span>
+						  <img class="modal-content" id="img08">
+						  <div id="caption8"></div>
+						</div>
+						
+						<img class="photoA photos PhotosOneColumn" id="myImg9" src="assets/portfolio/selected/Imagem170.jpg" alt="image">
+						<div id="myModal9" class="modal">
+						  <span class="close">&times;</span>
+						  <img class="modal-content" id="img09">
+						  <div id="caption9"></div>
+						</div>
+				   </div>
+		  		</div> 
+		    </div> 
+		  </div> 
+					          
+		</div>
 	</div>
-</div> 
+	</div>
+</div>
+ 
+</section>
   
 
    
-     <section id="page-photo"> 
-  <div class="container">
-	  <h2 class="section-title">Photography</h2> 
-	  <p id="photoInstruction">Hover over to see in color or click to enlarge</p>
-
-<div id="galleryB">
-
-<!-- <img id="myImg" src="img_fjords.jpg" alt="Trolltunga, Norway" width="300" height="200"> -->
+ 
 
 
-
-
-<img class="photoA photos" id="myImg1" src="assets/portfolio/selected/_DSC5701.jpg" alt="image">
-<div id="myModal1" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
-
-<img class="photoB photos" id="myImg2" src="assets/portfolio/selected/_DSC0472.jpg" alt="image">
-<div id="myModal2" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img02">
-  <div id="caption2"></div>
-</div>
-
-<img class="photoA photos" id="myImg3" src="assets/portfolio/selected/_DSC2392.jpg" alt="image">
-<div id="myModal3" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img03">
-  <div id="caption3"></div>
-</div>
-
-<img class="photoB photos" id="myImg4" src="assets/portfolio/selected/IMG_6003.jpg" alt="image">
-<div id="myModal4" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img04">
-  <div id="caption4"></div>
-</div>
-
-<img class="photoA photos" id="myImg5" src="assets/portfolio/selected/_DSC1228.jpg" alt="image">
-<div id="myModal5" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img05">
-  <div id="caption5"></div>
-</div>
-
-<img class="photoB photos" id="myImg6" src="assets/portfolio/selected/_DSC5773.jpg" alt="image">
-<div id="myModal6" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img06">
-  <div id="caption6"></div>
-</div>
-
-<img class="photoA photos" id="myImg7" src="assets/portfolio/selected/_DSC1937.jpg" alt="image">
-<div id="myModal7" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img07">
-  <div id="caption7"></div>
-</div>
-
-<img class="photoB photos" id="myImg8" src="assets/portfolio/selected/_DSC2654.jpg" alt="image">
-<div id="myModal8" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img08">
-  <div id="caption8"></div>
-</div>
-
-<img class="photoA photos" id="myImg9" src="assets/portfolio/selected/Imagem170.jpg" alt="image">
-<div id="myModal9" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img09">
-  <div id="caption9"></div>
-</div>
-
-</div>
-
-
-
-  </div> </section>   
-  
   
 <script src="js/modals.js"></script>  
    
@@ -502,26 +339,22 @@ footer {margin-top: 3em; background-color: black; width: 100vw; margin: 0; z-ind
 
 
 
-
-
-
-
-
-
-
-
-
   
 <!--   footer begins -->
  <footer> 
-         <h2 class="section-title"><span>Contact</span></h2> 
-		 <div> 
-			 <h4>Contact me:</h4> 
-			 <p>eduardo@torontobabel.com</p> 
-			 <p>www.eduardo.work</p> 
-  		</div> 
+		  <div class="container">
+			  <div class="row">	 
+		        <h2 class="section-title">Contact</h2> 
+				
+				<p>eduardo@torontobabel.com</p> 
+			    <p>www.eduardo.work</p> 
+				<a name="contact"></a> 
+			  </div> 
+		  </div>
  </footer>
 <!--   footer ends -->
 
+
+</div>
 </body>
 </html>

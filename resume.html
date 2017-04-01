@@ -50,11 +50,33 @@ a:active {
 /* =========HEADER=========== */
 
 header {width: 100vw; margin-bottom: 3em;}
-#name {font-size: 3em; color: #8d2a30;}
+#name {font-size: 4em; color: #8d2a30; margin-top: 2em;}
 #title {font-size: 2em;}
 
-.returnLink {display: inline;}
-#returnLinkGroup {float: right;}
+
+.navBAR {color:white; display: block; background-color: #b5b3b3;  width: 100vw; height: 2.3em; padding-top: 0.5vw; margin: 0 0 5em 0; position: fixed; top: 0; left: 0; }
+.navLink {display: inline; font-size: 1.5em; padding-left: 3vw;  padding-bottom: 1vh;}
+
+
+/* unvisited link */
+.navBAR a:link {
+    color: black;
+}
+
+/* visited link */
+.navBAR a:visited {
+    color: black;
+}
+
+/* mouse over link */
+.navBAR a:hover {
+    color: #8d2a30;
+}
+
+/* selected link */
+.navBAR a:active {
+    color: red;
+}
 
 /* =========ASIDE=========== */
 
@@ -71,13 +93,67 @@ ul {
   list-style-type: none;
 }
 
+
+
+
+/* =========MEDIA QUERIES=========== */
+
+
+@media only screen and (max-width : 768px) {
+
+
+.navLink {font-size: 0.9em;}
+
+
+}
+
+
+
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+
+.navLink {font-size: 1.5em;}
+
+
+}
+
+@media only screen and (min-width : 992px) {
+
+
+}
+
+
+
+
+
+
+
+
+
+
 </style>
 
 
-<div id="returnLinkGroup">
-<div class="returnLink"><a href="index.html">Home</a></div>	
-<div class="returnLink"><a href="professional.html">Professional</a></div>	
-</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="navBAR">
+	<div class="row">
+		<div class="navLink"><a href="index.html">Website</a></div>		
+		<div class="navLink"><a href="photography.html">Photographies</a></div>
+		<div class="navLink"><a href="#contact">Contact</a></div>
+		<div class="navLink"><a href="#contact">Print Resume</a></div>
+	</div>
+</div> 
+
+
 
 <header>
 <div id="name"><p>Eduardo Costa</p></div>	
@@ -92,18 +168,19 @@ ul {
 	
 
 <div id="contact">	
-<h2>CONTACT ME</h2>
+<h2>CONTACT</h2>
+<a name="contact"></a> 
 <ul>
 <li>Eduardo Costa</li>
 <li>eduardo@torontobabel.com</li>
-<li>647-967-3212</li>
 <li><a href="http://www.eduardo.work">Professional website: www.eduardo.work</a></li>
 <li><a href="https://www.linkedin.com/in/eduardo-costa-2167b713">LinkedIn profile</a></li>
-<li><a href="photography.html">Photography</a></li>
+<li></br></li>
 <li><a href="Eduardo%20Costa%20-%20resume.pdf" download>Download resume - Color</a></li>
 <li><a href="Eduardo%20Costa%20-%20resume.pdf" download>Download resume - Printer friendly</a></li>
 </ul>
 </div>
+
 </br></br>
 
 

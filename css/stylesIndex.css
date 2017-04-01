@@ -1,0 +1,283 @@
+
+/* =========FONT AND GENERAL===========	 */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+h2 {margin-left: 0.61em !important; font-size: 3em;}
+h3 {font-size: 1.6em; margin-left: 1.2em;}
+body {font-family: 'Raleway', sans-serif; font-weight: 100; color: white; background-color: black;}
+
+#profile-title {margin-bottom: 1vh;}
+html, body, #content {overflow-x:hidden !important; width: 100%;}
+
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: #0092ff;
+}
+
+/* selected link */
+a:active {
+    color: #d000ff;
+}
+
+/* =========HEADER===========	 */
+header {width: 100vw; height: 100vh; position: relative;}
+#videoContainer {position: relative; -webkit-filter: grayscale(100%); filter: grayscale(100%);}
+video { 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-50%) translateY(0%);
+    transition: 1s opacity;}
+
+/* =========NAVIGATION and PLAY===========	 */
+.navBAR {color:white; background-color: rgba(0, 0, 0, 0.7);  width: 45vw; z-index: 100; position: relative; top: -90vh; right: -55vw;}
+.navLink {display: inline; font-size: 1.5vw; padding-left: 7vw; padding-right: 0vw; padding-bottom: 1vh; color:white;}
+#playvid {display: block; position: relative; left: 75vw; top: -40vh; z-index: 3; margin:1em; font-size: 1.2em;}
+
+/* =========NAME AND TITLE===========	 */
+#titles {background-color: rgba(0, 0, 0, 0.77); width: 30vw; margin: 0; padding-bottom: 2em; position: relative; top: -40vh; padding-left: 1em;}
+#namePro {background-color: transparent; font-size: 4vw; text-align: left;}
+.nameTitlePro {background-color: transparent; font-size: 2vw; color: #ffffff; text-align: left;}
+
+/* =========ASIDES===========	 */
+.img-circle {border-radius: 50%; height: 30vh; display: block; margin-left: auto; margin-right: auto;}
+#aside1, #page-profile  {height: 34vh;}
+
+#aside2 {height: 100vh; background-color: black; margin: 0; padding: 0;}
+#page-UX {height: 100vh; background-color: white; margin: 0; color: #787878;}
+
+#aside3 {height: 100vh; background-color: #ed6445; margin: 0; padding: 0;}
+#page-web {height: 100vh; background-color: black; margin: 0; }
+
+#aside4 {height: 100vh; background-color: black; margin: 0; padding: 0;}
+#page-project {height: 100vh; background-color: white; margin: 0; color: #787878;}
+
+#aside5 {height: 100vh; background-color: #ed6445; margin: 0; padding: 0;}
+#page-photo {height: 100vh; background-color: black; margin: 0;}
+
+/* =========ALTERNATIVE TO ASIDES FOR SMALLER SCREENS===========	 */
+#aside2ALT {display: none;}
+#aside3ALT {display: none;}
+#aside4ALT {display: none;}
+#aside5ALT {display: none;}
+
+/* =========SECTIONS - GENERAL===========	 */
+.container {width: 100vw !important; margin: 0 !important; padding: 0 !important;}
+.keywords {font-size: 1.2em; margin-left: 1.7em;}
+
+/* =========PROFILE SECTION===========	 */
+.profileText { font-size: 1em; margin-left: 2.1em; margin-right: 2.1em;}
+
+/* =========UI/UX SECTION===========	 */
+#wireframe {margin-left: 1.3em;}
+
+/* =========WEB SECTION===========	 */
+
+
+/* =========PROJECT SECTION===========	 */
+blockquote {
+  font-size: 1.2em;
+  background: #f9f9f9;
+  border-left: 1em solid #ccc;
+  margin: 1.5em 1.8em;
+  padding: 0.5em 1em;
+  quotes: "\201C""\201D";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+/* Setting category divs to have a css property of display:inline-block, they will obey the text-align: center rule of the container. */
+.projectImagesGroup { text-align: center;}
+.projectImages {max-width: 9vw; display:inline-block;}
+
+/* =========PHOTOGRAPHY SECTION===========	 */
+.photoA {width: 15vw; margin-left: 5vw; margin-bottom: 5vw;}
+.photoB {width: 15vw; margin-left: 5vw; margin-bottom: 5vw;}
+.photos {-webkit-filter: grayscale(100%); filter: grayscale(100%);}
+#photoInstruction {margin-left: 2em; display: block;}
+#linkToGallery {margin-left: 2em; display: block; margin-bottom: 7.1vh;}
+
+/* unvisited link */
+#linkToGallery a:link {
+    color: #6bbfff;
+}
+
+/* visited link */
+#linkToGallery a:visited {
+    color: #6bbfff;
+}
+
+/* mouse over link */
+#linkToGallery a:hover {
+    color: #0092ff;
+}
+
+/* selected link */
+#linkToGallery a:active {
+    color: #d000ff;
+}
+
+/* =========PHOTOGRAPHY MODAL===========	 */
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #fcfbfb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* =========FOOTER===========	 */
+footer {display: inline-block; text-align: center; position: static; bottom: 2em; background-color: black; width: 100vw; margin-top: 3em; z-index: 5; padding-bottom: 2em;}
+footer h2 {margin-bottom: 2vh !important; margin-left: 0vw !important;}
+
+/* =========MEDIA QUERIES===========	 */
+@media only screen and (max-width : 768px) {
+
+	.navBAR {display: block; width: 75vw !important; z-index: 100; position: relative; top: -80vh; right: 0vw; padding-right: 10vw;}                                  
+   	.navLink {font-size: 3vw;}	
+   	#titles {top: -55vh !important; padding-bottom: 1em; width: 45vw;}  		
+   	#namePro {font-size: 5vw;}
+   	.nameTitlePro {font-size: 3vw;}
+    #playvid {position: relative; left: 30vw; top: -55vh; font-size: 1em;}   	
+h2 {font-size: 2.3em; margin-left: 0.75em !important;}
+.profileText {margin-left: 2em; margin-right: 2.1em;}
+	.img-circle {margin-top: 5vh;}
+
+	#aside2 {display: none !important;}
+	.forceHide {display: none !important;}
+	#aside3 {display: none;}
+	#aside4 {display: none;}
+	#aside5 {display: none;}
+	.keywords {font-size: 1em; margin-left: 1.7em;}	
+	.PhotosOneColumn {display: block; width: 100vw;}
+	#aside1 {height: auto; margin-top: -6em; margin-bottom: 2em;}
+	#page-profile  {height: auto;}
+	h2 {margin-left: 1em; padding-top: 1em;}
+	.projectImagesGroup, .projectImages {display: none;}
+	#aside1, #page-profile, #page-UX, #page-web, #page-project, #page-photo {height: auto;}
+	footer {margin-top: 1.5em !important;}
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+
+	.navBAR {display: block; width: 65vw !important; z-index: 100; position: relative; top: -80vh; right: 0vw; padding-right: 10vw;}                                  
+   	.navLink {font-size: 2.5vw;}
+     #titles {top: -55vh !important; padding-bottom: 1em;}
+     .nameTitlePro {} 		
+    #playvid {position: relative;  left: 40vw; top: -55vh;}
+	.img-circle {margin-top: 5vh;}
+	#aside2 {display: none !important;}
+	.forceHide {display: none !important;}
+	#aside3 {display: none;}
+	#aside4 {display: none;}
+	#aside5 {display: none;}	
+#icons {margin-bottom: 1em !important;}
+	
+	.PhotosOneColumn {display: block; width: 100vw;}
+	#aside1 {height: auto; margin-top: -6em; margin-bottom: 2em;}
+	#page-profile  {height: auto;}
+	h2 {margin-left: 1em; padding-top: 1em;}
+	.projectImagesGroup, .projectImages {display: none;}
+
+}
+
+@media only screen and (min-width : 992px) {
+
+}
