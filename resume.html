@@ -10,152 +10,31 @@
 
 <script src="main.js"></script>
 
-<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
 
-<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/stylesResume.css">
 
-<title>Eduardo Costa</title>
+
+<title>Eduardo Costa resume</title>
 </head>
 <body>
-<style>
-/* =========FONT AND GENERAL SETTINGS===========	 */
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-body {font-family: 'Raleway', sans-serif; font-weight: 100; margin: 2.5vw; color: #605f5f;}
-h2 {color: #8d2a30; font-weight: bold; font-size: 1.3em; margin-bottom: 0.7em; margin-top: 1.2em;}
-h3 {color: #8d2a30; font-size: 1.15em;}
-p, li {line-height: 1.7em;}
+<a name="contact"></a>
 
-/* unvisited link */
-a:link {
-    color: #3669df;
-}
 
-/* visited link */
-a:visited {
-    color: #3669df;
-}
-
-/* mouse over link */
-a:hover {
-    color: #FF00FF;
-}
-
-/* selected link */
-a:active {
-    color: #a13d8a;
-}
-
-
-
-/* =========HEADER=========== */
-
-header {width: 100vw; margin-bottom: 3em;}
-#name {font-size: 4em; color: #8d2a30; margin-top: 2em;}
-#title {font-size: 2em;}
-
-
-.navBAR {color:white; display: block; background-color: #b5b3b3;  width: 100vw; height: 2.3em; padding-top: 0.5vw; margin: 0 0 5em 0; position: fixed; top: 0; left: 0; }
-.navLink {display: inline; font-size: 1.5em; padding-left: 3vw;  padding-bottom: 1vh;}
-
-
-/* unvisited link */
-.navBAR a:link {
-    color: black;
-}
-
-/* visited link */
-.navBAR a:visited {
-    color: black;
-}
-
-/* mouse over link */
-.navBAR a:hover {
-    color: #8d2a30;
-}
-
-/* selected link */
-.navBAR a:active {
-    color: red;
-}
-
-/* =========ASIDE=========== */
-
-
-.formatResumeAside {float: left; width: 25vw;}
-#contact {}
-
-
-/* =========MAIN SECTION=========== */
-
-.formatResumeMain {float: right; width: 50vw; margin-right: 12vw;}
-
-ul {
-  list-style-type: none;
-}
-
-
-
-
-/* =========MEDIA QUERIES=========== */
-
-
-@media only screen and (max-width : 768px) {
-
-
-.navLink {font-size: 0.9em;}
-
-
-}
-
-
-
-@media only screen and (min-width : 768px) and (max-width : 992px) {
-
-.navLink {font-size: 1.5em;}
-
-
-}
-
-@media only screen and (min-width : 992px) {
-
-
-}
-
-
-
-
-
-
-
-
-
-
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
+<header>
 <div class="navBAR">
 	<div class="row">
 		<div class="navLink"><a href="index.html">Website</a></div>		
 		<div class="navLink"><a href="photography.html">Photographies</a></div>
-		<div class="navLink"><a href="#contact">Contact</a></div>
-		<div class="navLink"><a href="#contact">Print Resume</a></div>
+		<div class="navLink"><a href="#contact">Contact and Resume</a></div>
 	</div>
 </div> 
 
 
 
-<header>
+
 <div id="name"><p>Eduardo Costa</p></div>	
 <div id="title"><p>UX Specialist</p></div>	
 	
@@ -164,144 +43,146 @@ ul {
 	
 
 
-<section class="formatResumeAside formatProAside">
-	
+<div class="container-fluid">
+	<div class="row">	
 
-<div id="contact">	
-<h2>CONTACT</h2>
-<a name="contact"></a> 
-<ul>
-<li>Eduardo Costa</li>
-<li>eduardo@torontobabel.com</li>
-<li><a href="http://www.eduardo.work">Professional website: www.eduardo.work</a></li>
-<li><a href="https://www.linkedin.com/in/eduardo-costa-2167b713">LinkedIn profile</a></li>
-<li></br></li>
-<li><a href="Eduardo%20Costa%20-%20resume.pdf" download>Download resume - Color</a></li>
-<li><a href="Eduardo%20Costa%20-%20resume.pdf" download>Download resume - Printer friendly</a></li>
-</ul>
+			<div class="col-md-3">
+
+				<div id="contact">	
+					<h2>CONTACT</h2>
+
+					<ul>
+					<li>Eduardo Costa</li>
+					<li>eduardo@torontobabel.com</li>
+					<li><a href="http://www.eduardo.work">Professional website: www.eduardo.work</a></li>
+					<li><a href="https://www.linkedin.com/in/eduardo-costa-2167b713">LinkedIn profile</a></li>
+					</ul>					
+					
+					<h3 id"resume">Resume:</h3>
+					<ul>
+					<li><a href="EduardoCosta-UXspecialist.pdf" download>Download resume - Color</a></li>
+					<li><a href="EduardoCosta-UXspecialist-Printer.pdf" download>Download resume - Printer friendly</a></li>
+					</ul>
+				</div>
+	
+					</br></br>
+	
+		
+				<div class="skills">
+					<h2>ADVANCED SKILLS</h2>
+					<ul>
+					<li>UI/UX </li>
+					<li>Project management</li>
+					<li>HTML 5</li>
+					<li>CSS 3 with Flexbox</li>
+					<li>Responsive Web Design</li>
+					<li>SVG</li>
+					<li>jQuery</li>
+					<li>Bootstrap</li>
+					<li>Lightroom</li>
+					<li>Digital Photography</li>
+					<li>Sketch 3</li>
+					<li>GitHub</li>
+					<li>Unix for OS X</li>
+					</ul>
+					</br>
+				</div>
+	
+				<div class="skills">
+					<h2>INTERMEDIATE SKILLS </br>AND LEARNING</h2>
+					<ul>
+					<li>Photoshop</li>
+					<li>Illustrator</li>
+					<li>Javascript</li>
+					<li>LESS/SASS</li>
+					<li>JIRA</li>
+					<li>SQL</li>
+					<li>PHP</li>
+					<li>Ruby</li>
+					<li>Ruby on Rails</li>
+					</ul>
+					</br>
+				</div>
+
+
+
+			</div>
+
+			<div class="col-md-9">	
+			<section>
+		
+				<h2>PERSONAL SUMMARY</h2>
+					<p>I am UI/UX specialist with a lot of experience in managing projects, and some experience in front-end development.</p>
+					<p>Along my career, I had a chance to work and to participate in projects for diverse business: IBM, Embraer, small companies and Ontario government.</p>
+					<p>I have a passion for UI/UX and web design. I am also a marathon runner, meetup group organizer and photographer.</p> 
+				</br>				
+				
+				<h2>CAREER HISTORY IN CANADA</h2>
+				<h3>tudoaqui.ca</h3>
+				<p>UI/UX Front End Designer / 2011 – Current</p>
+				<ul>
+				<li>> Developed the entire responsive online newspaper using UI/UX techniques and methodologies.</li>
+				<li>> Coded the entire website over 100 pages using advanced HTML5, CSS3, LESS, JavaScript and jQuery.</li>
+				<li>> Worked with clients to meet their requirements and used Photoshop for wireframes and mockups.</li>
+				<li>> Used 5S approach: Strategy, Scope, Structure, Skeleton and Surface.</li>
+				<li>> Prepared styled emails for the campaigns (classifieds and events).</li>
+				</ul>
+				</br>
+				
+				<h3>Run Unlimited</h3>
+				<p>Web developer  / 2011 - 2014</p>
+				<ul>
+				<li>> Created a responsive e-commerce website using HTML5 and CSS3, logo, Flash animations.</li>
+				<li>> Set up hosting, domain registration and payment plugins.</li>
+				</ul>
+				</br>
+				
+				<h3>Ontario Ministry of Research and Innovation</h3>
+				<p>Project Manager / 2010 – 2011</p>
+				<ul>
+				<li>> Led the project to build a database with innovation metrics currently tracked by international organizations.</li>
+				<li>> Consolidated information from an inter-ministries inquiry about Innovation Programs in Ontario.</li>
+				<li>> Assisted Strategic Planning team in developing performance measures for MRI programs.</li>
+				</ul>
+				</br>
+				
+				<h2>UI/UX and WEB DEVELOPMENT CERTIFICATIONS</h2>
+				<h3>User Experience Certificate - George Brown College</h3>
+				<p>Specialization in UX/UI. This certificate provides a strong foundation in user experience (UX) design. Focused on advanced concepts of UX research and strategy, intuitive structure and best practices.</p>
+				</br>
+				
+				<h3>Front-end Development Certification - FreeCodeCamp - Online</h3>
+				<p>Online course covering the main technologies of front-end development.</p>
+				</br>
+				
+				<h3>Web Design Certificate - OCAD, Toronto</h3>
+				<p>Deeper understanding of web design, development, SEO and statistics in one of the best art schools of Canada.</p>
+				</br>
+				
+				<h3>Responsive Website Development and Design - University of London, UK</h3>
+				<p>Six-month certification program. Learning about UX/UI, responsive websites, HTML, CSS, JavaScript, jQuery and databases.</p>
+				</br>
+				
+				<h3>Lynda.com</h3>
+				<p>Over 60 online courses covering several techniques in UI/UX, front end and back end development.</p>
+				</br>
+				
+				
+				<h2>ACADEMIC EDUCATION</h2>
+				<h3>Universidade Federal de Minas Gerais, Brazil</h3>
+				<p>Bachelor of Science in Mechanical Engineering  - 1999</p>
+				<p>UFMG is considered one of the best universities in Brazil</p>
+				</br>
+				
+				<h3>UNA Management Sciences Faculty, Brazil</h3>
+				<p>Graduate studies of Business Management  - 1995</p>
+				<p>1st. place in admission exams, among over 2,000 candidates</p>
+				</br>	
+	
+			</section>
+			</div>
+	</div>
 </div>
-
-</br></br>
-
-
-
-<h2>ADVANCED SKILLS</h2>
-<ul>
-<li>UI/UX</li>
-<li>Project management</li>
-<li>HTML 5</li>
-<li>CSS 3 with Flexbox</li>
-<li>jQuery</li>
-<li>Bootstrap</li>
-<li>Lightroom</li>
-<li>Photography</li>
-<li>Sketch 3</li>
-<li>GitHub</li>
-<li>Unix for OS X</li>
-</ul>
-</br>
-
-
-<h2>INTERMEDIATE SKILLS </br>AND LEARNING</h2>
-<ul>
-<li>Photoshop</li>
-<li>Illustrator</li>
-<li>Javascript</li>
-<li>Angular 2</li>
-<li>LESS/SASS</li>
-<li>JIRA</li>
-<li>SQL</li>
-<li>PHP</li>
-<li>Ruby</li>
-<li>Ruby on Rails</li>
-</ul>
-</br>
-
-<h2>LANGUAGES</h2>
-<ul>
-<p>English</p>
-<p>Portuguese</p>
-<p>Learning French</p>
-</ul>
-</br>
-
-
-	
-</section>
-
-
-
-<section class="formatResumeMain formatProMain">
-	
-<h2>PERSONAL SUMMARY</h2>
-<p>I am a well-rounded professional specialized in UX/UI design. I have also a lot of experience in front-end development and project management.</p>
-<p>Along my career, I had a chance to manage projects for diverse business: from IBM to small companies and even Ontario government.</p> 
-<p>I am also a meetup organizer, avid reader and photographer.</p>
-</br>
-
-<h2>CAREER HISTORY IN CANADA</h2>
-<h3>tudoaqui.ca</h3>
-<p>UI/UX Front End Designer / 2011 – Current</p>
-<ul>
-<li>Developed the entire responsive online newspaper using UI/UX techniques and methodologies</li>
-<li>Coded the entire website over 100 pages using advanced HTML5, CSS3, LESS, JavaScript and jQuery</li>
-<li>Worked with clients to meet their requirements and used Photoshop for wireframes and mock-ups</li>
-<li>Used 5S approach: Strategy, Scope, Structure, Skeleton and Surface</li>
-<li>Prepared styled emails for the campaigns (classifieds and events)</li>
-</ul>
-</br>
-
-<h3>Run Unlimited</h3>
-<p>Web developer  / 2011 - 2014</p>
-<ul>
-<li>Created a responsive e-commerce website using HTML5 and CSS3, logo, Flash animations</li>
-<li>Set up hosting, domain registration and payment plugins</li>
-</ul>
-</br>
-
-<h3>Ontario Ministry of Research and Innovation</h3>
-<p>Project Manager / 2010 – 2011</p>
-<ul>
-<li>Led the project to build a database with innovation metrics currently tracked by international organizations</li>
-<li>Consolidated information from an inter-ministries inquiry about Innovation Programs in Ontario</li>
-<li>Assisted Strategic Planning team in developing performance measures for MRI programs</li>
-</ul>
-</br>
-
-<h2>UI/UX and WEB DEVELOPMENT CERTIFICATIONS</h2>
-<h3>User Experience Certificate - George Brown College</h3>
-<p>Specialization in UX/UI. This certificate provides a strong foundation in user experience (UX) design. Focused on advanced concepts of UX research and strategy, intuitive structure and best practices</p>
-</br>
-
-<h3>Front-end Development Certification - FreeCodeCamp - Online</h3>
-<p>Online course covering the main technologies of front-end development</p>
-</br>
-
-<h3>Web Design Certificate - OCAD, Toronto</h3>
-<p>Deeper understanding of web design, development, SEO and statistics in one of the best art schools of Canada</p>
-</br>
-
-<h3>Responsive Website Development and Design - University of London, UK</h3>
-<p>Six-month certification program. Learning about UX/UI, responsive websites, HTML, CSS, JavaScript, jQuery and databases</p>
-</br>
-
-<h3>Lynda.com</h3>
-<p>Over 60 online courses covering several techniques in UI/UX, front end and back end development</p>
-</br>
-
-<h2>ACADEMIC EDUCATION</h2>
-<h3>Universidade Federal de Minas Gerais, Brazil</h3>
-<p>Bachelor of Science in Mechanical Engineering  - 1999</p>
-<p>UFMG is considered one of the best universities in Brazil</p>
-</br>
-
-<h3>UNA Management Sciences Faculty, Brazil</h3>
-<p>Graduate studies of Business Management  - 1995</p>
-<p>1st. place in admission exams, among over 2,000 candidates</p>
-</br>	
-	
-</section>
-
 
 </br>
 

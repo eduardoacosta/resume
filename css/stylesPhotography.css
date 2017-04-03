@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {font-family: 'Raleway', sans-serif; font-weight: 100; background-color: black; margin: 0; padding: 0; color: white;}
+html, body, .content {overflow-x:hidden !important; width: 100%;}
+
+/* =========NAVIGATION===========	 */
+
+.nav {color:white; background-color: rgba(0, 0, 0, 0.7);  width: 45vw; z-index: 100; position: absolute; top: 10vh; right: 0vw !important; z-index: 2;}
+.navLink {display: inline; font-size: 1.5vw; padding-left: 7vw; padding-right: 1vw; padding-bottom: 1vh; color:white;}
+.firstNav {margin-left: 5vw; padding-left: 0vw;}
+
+
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: #6445ff;
+}
+
+/* selected link */
+a:active {
+    color: #6e6eff;
+}
+
+/* =========MAIN TEXT===========	 */
+
+#titles {background-color: rgba(0, 0, 0, 0.77); width: 30vw; margin: 0; padding-bottom: 2em; position: absolute; top: 65vh; z-index: 2;}
+#namePro {background-color: transparent; font-size: 4vw; text-align: center;}
+.nameTitlePro {background-color: transparent; font-size: 2vw; color: #ffffff; text-align: right; padding-right: 1.5vw;}
+
+
+/* =========PHOTOS===========	 */
+
+#firstPhoto {position: relative; top: 0; left: 0;}
+/* #image01-full, #image07-full, #image12-full, #image19-full, #image23-full, #image31-full, #image34-full, footer {max-width: 100vw;} */
+/* #image02-third, #image04-third, #image03-third, #image20-third, #image21-third, #image22-third, #image24-third, #image25-third, #image26-third {max-width: 33.2vw;} */
+/*
+#image05-half, #image06-half, #image13-half, #image14-half, #image32-half, #image33-half {max-width: 49.85vw;}
+#image08-forth, #image09-forth, #image10-forth, #image11-forth, #image15-forth, #image16-forth, #image17-forth, #image18-forth, #image27-forth, #image28-forth, #image29-forth, #image30-forth {max-width: 24.8vw;}
+*/
+
+.photosPortfolio, body  {padding: -0.3vw; object-fit: contain !important;}
+.photosPortfolio {padding-bottom:2vw;}
+
+/* =========FOOTER===========	 */
+
+footer h4 {font-size: 2vw; text-align: center;}
+.footer {text-align: center;}
+
+/* unvisited link */
+p a:link {
+    color: #6eabff;
+}
+
+/* visited link */
+p a:visited {
+    color: #6eabff;
+}
+
+/* mouse over link */
+p a:hover {
+    color: #2c00ff;
+}
+
+/* selected link */
+p a:active {
+    color: #6e6eff;
+}
+
+
+/* =========MEDIA QUERIES===========	 */
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 400px) {
+
+	.nav {width: 60vw; z-index: 100; position: absolute; top: 4vh;}
+	.navLink {font-size: 3vw;}	
+	#titles {width: 40vw; margin: 0; padding-bottom: 0em; position: absolute; top: 25vh; z-index: 2;}
+	#namePro {font-size: 5vw; text-align: center;}
+	.nameTitlePro { font-size: 3vw;}	
+	footer h4 {font-size: 5vw; text-align: center;}
+}
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 401px) and (max-width : 750px) {
+
+	.nav {width: 60vw; z-index: 100; position: absolute; top: 5vh;}
+	.navLink {font-size: 3vw;}	
+	#titles {width: 40vw; margin: 0; padding-bottom: 0em; position: absolute; top: 30vh; z-index: 2;}
+	#namePro {font-size: 4.5vw; text-align: center;}
+	.nameTitlePro { font-size: 2.5vw;}	
+	footer h4 {font-size: 4vw; text-align: center;}
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 751px) and (max-width : 1024px) {
+
+	.nav {width: 50vw; z-index: 100; position: absolute; top: 7vh;}
+	.navLink {font-size: 2vw;}	
+	#titles {width: 30vw; margin: 0; padding-bottom: 1em; position: absolute; top: 47vh; z-index: 2;}
+	footer h4 {font-size: 3vw; text-align: center;}
+}
+
