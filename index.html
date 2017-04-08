@@ -4,13 +4,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<script src="js/main.js"></script>
-<script src="js/photos.js"></script>
-<script src="js/modals.js"></script>
 
 <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -19,16 +12,30 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/stylesIndex.css">
 
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="js/jquery-3.2.0.min.js"></script>  
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<script src="js/photos.js"></script>
+<script src="js/modals.js"></script>
+<script src="js/main.js"></script>
+
+<!-- This script must stay here -->
 
 <script>
-	
-$(document).ready(function($) {
+	$(document).ready(function($) {
     $("#bgvid").click(function() {
         this.paused ? this.play() : this.pause();
     });
 });
-
 </script>
+
 
 
 <title>Eduardo Costa</title>
@@ -44,10 +51,14 @@ $(document).ready(function($) {
 
 <header>
 	<div id="videoContainer">
-		<video autoplay id="bgvid" loop muted>
+
+		<video autoplay id="bgvid" loop muted >
   		<source src="assets/videos/office2.mp4" type="video/mp4">
   		<source src="assets/videos/office2.webm" type="video/webm">
-		</video>		
+  		<p>The browser doesn't support video</p>
+		</video>
+
+		<div id="alternativeImage"><img class="img-responsive" alt="image" src="assets/videos/imageHeader.jpg"/></div>
 	</div>
  
 
@@ -66,7 +77,7 @@ $(document).ready(function($) {
 		<p class="nameTitlePro">Front-end developer</p>
 	</div>
 	
-	<div id="playvid">Click on the video to pause/play</div>
+<!-- Future feature	<div id="playvid">Click on the video to pause/play</div> -->
 </header>
 
 <!-- ============PROFILE======================= -->
@@ -261,6 +272,8 @@ $(document).ready(function($) {
 					<p class="keywords">Digital photography, editing and publishing</p>
 		
 					<p id="photoInstruction">Hover over to see in color or click to enlarge</p>
+					<p id="photoInstruction2">Click to enlarge</p>
+					
 					<p id="linkToGallery"><a href="photography.html">Or click here to see the entire photos gallery</a></p>
 		
 		

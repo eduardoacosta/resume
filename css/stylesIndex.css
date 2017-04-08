@@ -30,6 +30,7 @@ a:active {
 
 /* =========HEADER===========	 */
 header {width: 100vw; height: 100vh; position: relative;}
+#alternativeImage {display: none;}
 #videoContainer {position: relative; -webkit-filter: grayscale(100%); filter: grayscale(100%);}
 video { 
     position: relative;
@@ -53,6 +54,7 @@ video {
 /* =========ASIDES===========	 */
 .img-circle {border-radius: 50%; height: 30vh; display: block; margin-left: auto; margin-right: auto;}
 #aside1, #page-profile  {height: 34vh;}
+#aside1 {background-color: black;}
 
 #aside2 {height: 100vh; background-color: black; margin: 0; padding: 0;}
 #page-UX {height: 100vh; background-color: white; margin: 0; color: #787878;}
@@ -112,6 +114,7 @@ blockquote:before {
 .photoB {width: 15vw; margin-left: 5vw; margin-bottom: 5vw;}
 .photos {-webkit-filter: grayscale(100%); filter: grayscale(100%);}
 #photoInstruction {margin-left: 2em; display: block;}
+#photoInstruction2 {margin-left: 2em; display: block; display: none;}
 #linkToGallery {margin-left: 2em; display: block; margin-bottom: 7.1vh;}
 
 /* unvisited link */
@@ -229,16 +232,20 @@ footer h2 {margin-bottom: 2vh !important; margin-left: 0vw !important;}
 /* =========MEDIA QUERIES===========	 */
 @media only screen and (max-width : 768px) {
 
-	.navBAR {display: block; width: 75vw !important; z-index: 100; position: relative; top: -80vh; right: 0vw; padding-right: 10vw;}                                  
+/* #videoContainer, video {position: relative; top: -15% !important;} */
+
+	video {display: none;}
+	#alternativeImage {display: block !important;}
+	#alternativeImage {position: relative; top: 0; left: 0; width: 100vw; height: auto;}
+	.navBAR {display: block; width: 75vw !important; z-index: 100; position: relative; top: -40vh; right: 0vw; padding-right: 10vw;}                                  
    	.navLink {font-size: 3vw;}	
-   	#titles {top: -55vh !important; padding-bottom: 1em; width: 45vw;}  		
+   	#titles {top: -28vh !important; padding-bottom: 1em; width: 45vw;}  		
    	#namePro {font-size: 5vw;}
    	.nameTitlePro {font-size: 3vw;}
-    #playvid {position: relative; left: 30vw; top: -55vh; font-size: 1em;}   	
-h2 {font-size: 2.3em; margin-left: 0.75em !important;}
-.profileText {margin-left: 2em; margin-right: 2.1em;}
+    #playvid {display: none;}  	
+	h2 {font-size: 2.3em; margin-left: 0.75em !important;}
+	.profileText {margin-left: 2em; margin-right: 2.1em;}
 	.img-circle {margin-top: 5vh;}
-
 	#aside2 {display: none !important;}
 	.forceHide {display: none !important;}
 	#aside3 {display: none;}
@@ -252,32 +259,43 @@ h2 {font-size: 2.3em; margin-left: 0.75em !important;}
 	.projectImagesGroup, .projectImages {display: none;}
 	#aside1, #page-profile, #page-UX, #page-web, #page-project, #page-photo {height: auto;}
 	footer {margin-top: 1.5em !important;}
+	#photoInstruction {display: none;}
+	#photoInstruction2 {display: block;}
+	.photos {-webkit-filter: none; filter: none !important;}
+	#wireframe, #wireframe2, #prototype {display: none;}
 
 }
 
 @media only screen and (min-width : 768px) and (max-width : 992px) {
 
-	.navBAR {display: block; width: 65vw !important; z-index: 100; position: relative; top: -80vh; right: 0vw; padding-right: 10vw;}                                  
+/* #videoContainer, video {position: relative; top: -5% !important;} */
+
+	video {display: none;}
+	#alternativeImage {display: block !important;}
+	#alternativeImage {position: relative; top: 0; left: 0; width: 100vw; height: 100vh;}
+	.navBAR {display: block; width: 65vw !important; z-index: 100; position: relative; top: -90vh; right: 0vw; padding-right: 10vw;}                                  
    	.navLink {font-size: 2.5vw;}
      #titles {top: -55vh !important; padding-bottom: 1em;}
-     .nameTitlePro {} 		
-    #playvid {position: relative;  left: 40vw; top: -55vh;}
+    #playvid {display: none;}
 	.img-circle {margin-top: 5vh;}
 	#aside2 {display: none !important;}
 	.forceHide {display: none !important;}
 	#aside3 {display: none;}
 	#aside4 {display: none;}
 	#aside5 {display: none;}	
-#icons {margin-bottom: 1em !important;}
-	
+	#icons {margin-bottom: 1em !important;}
 	.PhotosOneColumn {display: block; width: 100vw;}
 	#aside1 {height: auto; margin-top: -6em; margin-bottom: 2em;}
 	#page-profile  {height: auto;}
 	h2 {margin-left: 1em; padding-top: 1em;}
 	.projectImagesGroup, .projectImages {display: none;}
+	#photoInstruction {display: none;}
+	#photoInstruction2 {display: block;}
+	.photos {-webkit-filter: none; filter: none !important;}
+
 
 }
 
 @media only screen and (min-width : 992px) {
-
+	
 }

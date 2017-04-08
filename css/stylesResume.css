@@ -82,4 +82,7 @@ ul {list-style-type: none;}
 }
 
 @media only screen and (min-width : 992px) {
+	
+	#contact li, .skills li {margin-left: 0vw;}
+	.col-md-3 h2, #resume {margin-left: .5vw !important;}
 }
