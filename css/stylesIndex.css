@@ -84,6 +84,28 @@ video {
 /* =========UI/UX SECTION===========	 */
 #wireframe {margin-left: 1.3em;}
 
+
+
+/* unvisited link */
+#examples a:link {
+    color: #6bbfff;
+}
+
+/* visited link */
+#examples a:visited {
+    color: #6bbfff;
+}
+
+/* mouse over link */
+#examples a:hover {
+    color: #0092ff;
+}
+
+/* selected link */
+#examples a:active {
+    color: #d000ff;
+}
+
 /* =========WEB SECTION===========	 */
 
 

@@ -1,0 +1,121 @@
+/* =========FONT AND GENERAL SETTINGS===========	 */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {font-family: 'Raleway', sans-serif; font-weight: 100; font-size: 16px; margin: 2.5vw; color: #605f5f;}
+h1, h2, h3, p ul, li {margin-left: 0; margin-right: 0;}
+html, body {overflow-x:hidden !important; width: 100%;}
+h2 {color: #8d2a30; font-weight: bold; font-size: 1.3em; margin-bottom: 0.7em; margin-top: 1.2em;}
+h3 {color: #8d2a30; font-size: 1.15em;}
+p, li {line-height: 1.7em;}
+
+/* =========LINKS BASIC=========== */
+/* unvisited link */
+a:link {
+    color: #3669df;
+}
+
+/* visited link */
+a:visited {
+    color: #3669df;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+    color: #a13d8a;
+}
+
+
+
+/* =========HEADER=========== */
+header {width: 100vw; margin-bottom: 3em;}
+#name {font-size: 4em; color: #8d2a30; margin-top: 2em; margin-left: 1vw;}
+#title {font-size: 2em; margin-top: -1em; margin-left: 1.2vw;}
+
+
+/* =========NAV=========== */
+.navBAR {color:white; display: block; background-color: #b5b3b3;  width: 100vw; height: 3em; padding-top: 0.6vw; margin: 0 0 5em 0; position: fixed; top: 0; left: 0; z-index: 200;}
+.navLink {display: inline; font-size: 1.5em; padding-left: 5.2vw;  padding-bottom: 1vh;}
+
+/* =========LINKS=========== */
+/* unvisited link */
+.navBAR a:link {
+    color: black;
+}
+
+/* visited link */
+.navBAR a:visited {
+    color: black;
+}
+
+/* mouse over link */
+.navBAR a:hover {
+    color: #8d2a30;
+}
+
+/* selected link */
+.navBAR a:active {
+    color: red;
+}
+
+
+/* =========PICTURES=========== */
+	
+.box {
+	position: relative;
+	background-color: #2b2929;
+	margin-bottom: 2em;
+	width: 100%;		
+}
+
+.box:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 
+clear: both;
+}
+
+.content {
+	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	font-weight: 100; font-size: 24px;
+}
+
+.photos {
+  object-fit: cover; /* Do not scale the image */
+  object-position: 0; /* Center the image within the element */
+  height: 100%;
+  width: 100%;
+}
+	
+
+/* =========ASIDE=========== */
+
+#contact li, .skills li  {margin-left: -3vw;}
+
+/* =========MAIN SECTION=========== */
+ul {list-style-type: none;}
+.col-md-9 {padding-left: 3vw; padding-right: 3vw;}
+
+/* =========MEDIA QUERIES=========== */
+@media only screen and (max-width : 768px) {
+#name {font-size: 3em;}
+#title {font-size: 1.5em;}
+.navLink {font-size: 0.9em; text-align: center; padding-left: 6vw;}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+.navLink {font-size: 1.5em;}
+}
+
+@media only screen and (min-width : 992px) {
+	
+	#contact li, .skills li {margin-left: 0vw;}
+	.col-md-3 h2, #resume {margin-left: .5vw !important;}
+}
