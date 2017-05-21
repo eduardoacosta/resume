@@ -42,8 +42,8 @@ video {
     transition: 1s opacity;}
 
 /* =========NAVIGATION and PLAY===========	 */
-.navBAR {color:white; background-color: rgba(0, 0, 0, 0.7);  width: 45vw; z-index: 100; position: relative; top: -90vh; right: -55vw;}
-.navLink {display: inline; font-size: 1.5vw; padding-left: 7vw; padding-right: 0vw; padding-bottom: 1vh; color:white;}
+.navBAR {color:white; background-color: rgba(0, 0, 0, 0.7);  width: 65vw; z-index: 100; position: relative; top: -90vh; right: -55vw;}
+.navLink {display: inline; font-size: 1.5vw; padding-left: 4vw; padding-right: 0vw; padding-bottom: 1vh; color:white;}
 #playvid {display: block; position: relative; left: 75vw; top: -40vh; z-index: 3; margin:1em; font-size: 1.2em;}
 
 /* =========NAME AND TITLE===========	 */
@@ -83,8 +83,8 @@ video {
 
 /* =========UI/UX SECTION===========	 */
 #wireframe {margin-left: 1.3em;}
-
-
+#wireframe, #wireframe2, #prototype {width: 15vw;}
+#iphone {width: 25vw;}
 
 /* unvisited link */
 #examples a:link {
@@ -259,7 +259,7 @@ footer h2 {margin-bottom: 2vh !important; margin-left: 0vw !important;}
 	video {display: none;}
 	#alternativeImage {display: block !important;}
 	#alternativeImage {position: relative; top: 0; left: 0; width: 100vw; height: auto;}
-	.navBAR {display: block; width: 75vw !important; z-index: 100; position: relative; top: -40vh; right: 0vw; padding-right: 10vw;}                                  
+	.navBAR {display: block; width: 80vw !important; z-index: 100; position: relative; top: -40vh; right: 0vw; padding-right: 10vw;}                                  
    	.navLink {font-size: 3vw;}	
    	#titles {top: -28vh !important; padding-bottom: 1em; width: 45vw;}  		
    	#namePro {font-size: 5vw;}
@@ -284,7 +284,7 @@ footer h2 {margin-bottom: 2vh !important; margin-left: 0vw !important;}
 	#photoInstruction {display: none;}
 	#photoInstruction2 {display: block;}
 	.photos {-webkit-filter: none; filter: none !important;}
-	#wireframe, #wireframe2, #prototype {display: none;}
+	#wireframe, #wireframe2, #prototype, #iphone {display: none;}
 
 }
 
@@ -295,7 +295,7 @@ footer h2 {margin-bottom: 2vh !important; margin-left: 0vw !important;}
 	video {display: none;}
 	#alternativeImage {display: block !important;}
 	#alternativeImage {position: relative; top: 0; left: 0; width: 100vw; height: 100vh;}
-	.navBAR {display: block; width: 65vw !important; z-index: 100; position: relative; top: -90vh; right: 0vw; padding-right: 10vw;}                                  
+	.navBAR {display: block; width: 80vw !important; z-index: 100; position: relative; top: -90vh; right: 0vw; padding-right: 10vw;}                                  
    	.navLink {font-size: 2.5vw;}
      #titles {top: -55vh !important; padding-bottom: 1em;}
     #playvid {display: none;}
@@ -314,7 +314,7 @@ footer h2 {margin-bottom: 2vh !important; margin-left: 0vw !important;}
 	#photoInstruction {display: none;}
 	#photoInstruction2 {display: block;}
 	.photos {-webkit-filter: none; filter: none !important;}
-
+	#iphone {width: 18vw;}
 
 }
 

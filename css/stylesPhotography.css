@@ -5,7 +5,7 @@ html, body, .content {overflow-x:hidden !important; width: 100%;}
 
 /* =========NAVIGATION===========	 */
 
-.nav {color:white; background-color: rgba(0, 0, 0, 0.7);  width: 45vw; z-index: 100; position: absolute; top: 10vh; right: 0vw !important; z-index: 2;}
+.nav {color:white; background-color: rgba(0, 0, 0, 0.7);  width: 65vw; z-index: 100; position: absolute; top: 10vh; right: 0vw !important; z-index: 2;}
 .navLink {display: inline; font-size: 1.5vw; padding-left: 7vw; padding-right: 1vw; padding-bottom: 1vh; color:white;}
 .firstNav {margin-left: 5vw; padding-left: 0vw;}
 
@@ -73,7 +73,7 @@ p a:active {
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 400px) {
 
-	.nav {width: 60vw; z-index: 100; position: absolute; top: 4vh;}
+	.nav {width: 85vw; z-index: 100; position: absolute; top: 4vh;}
 	.navLink {font-size: 3vw;}	
 	#titles {width: 40vw; margin: 0; padding-bottom: 0em; position: absolute; top: 25vh; z-index: 2;}
 	#namePro {font-size: 5vw; text-align: center;}
@@ -85,7 +85,7 @@ p a:active {
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 401px) and (max-width : 750px) {
 
-	.nav {width: 60vw; z-index: 100; position: absolute; top: 5vh;}
+	.nav {width: 80vw; z-index: 100; position: absolute; top: 5vh;}
 	.navLink {font-size: 3vw;}	
 	#titles {width: 40vw; margin: 0; padding-bottom: 0em; position: absolute; top: 30vh; z-index: 2;}
 	#namePro {font-size: 4.5vw; text-align: center;}
@@ -97,7 +97,7 @@ p a:active {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width : 751px) and (max-width : 1024px) {
 
-	.nav {width: 50vw; z-index: 100; position: absolute; top: 7vh;}
+	.nav {width: 75vw; z-index: 100; position: absolute; top: 7vh;}
 	.navLink {font-size: 2vw;}	
 	#titles {width: 30vw; margin: 0; padding-bottom: 1em; position: absolute; top: 47vh; z-index: 2;}
 	footer h4 {font-size: 3vw; text-align: center;}
